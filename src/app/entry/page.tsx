@@ -13,7 +13,9 @@ import {
     Zap,
     AlertCircle,
     CheckCircle2,
-    PencilLine
+    PencilLine,
+    UserCircle2,
+    MessageSquare
 } from "lucide-react";
 import { reflectionService } from "@/services/reflectionService";
 import { WeeklyReflection, ImprovementCategory } from "@/types/reflection";
@@ -300,6 +302,30 @@ function EntryForm() {
                             ))}
                         </div>
                     </div>
+
+                    {/* 6. Global Reflection & Mentor Message (Step 3 Only) */}
+                    {step === 3 && (
+                        <div className="space-y-6 pt-10 border-t border-zinc-900">
+                            <h3 className="text-sm font-black text-zinc-400 flex items-center gap-2 uppercase tracking-widest">
+                                <UserCircle2 size={16} className="text-blue-500" />
+                                Global Wrap-up
+                            </h3>
+                            <div className="p-6 rounded-[2rem] bg-zinc-900/60 border border-zinc-800 group focus-within:border-blue-500/30 transition-all shadow-2xl">
+                                <div className="flex items-center gap-2 mb-4">
+                                    <MessageSquare size={14} className="text-zinc-600" />
+                                    <span className="text-[10px] font-black text-zinc-600 uppercase tracking-widest">Message to Mentor (Optional)</span>
+                                </div>
+                                <textarea
+                                    rows={4}
+                                    value={reflection?.mentorComment || ""}
+                                    onChange={(e) => setReflection(prev => prev ? { ...prev, mentorComment: e.target.value } : null)}
+                                    placeholder="今週の総括や、メンターに伝えたいこと、相談したいこと..."
+                                    className="w-full bg-transparent border-none focus:ring-0 outline-none text-sm text-zinc-300 placeholder:text-zinc-700 resize-none font-medium leading-relaxed"
+                                />
+                            </div>
+                            <p className="text-[10px] font-bold text-zinc-600 text-center italic">「完了して保存」で今週のレポートが確定します</p>
+                        </div>
+                    )}
                 </>
             </section>
 

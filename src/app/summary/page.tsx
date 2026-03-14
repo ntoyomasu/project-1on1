@@ -15,7 +15,9 @@ import {
     Lightbulb,
     BarChart3,
     Calendar,
-    Clock
+    Clock,
+    UserCircle2,
+    MessageSquareQuote
 } from "lucide-react";
 import { reflectionService } from "@/services/reflectionService";
 import { analyzeROI, ROIAnalysis } from "@/lib/analytics";
@@ -154,7 +156,52 @@ function SummaryView() {
                     </div>
                 ))}
 
-                {/* 3. Inventions in this session */}
+                {/* 3. Mentor Perspective (AI + Manual) */}
+                <div className="p-8 rounded-[2.5rem] bg-gradient-to-br from-zinc-900 to-zinc-950 border border-white/5 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 p-6 opacity-10">
+                        <UserCircle2 size={100} className="text-blue-500" />
+                    </div>
+
+                    <div className="flex items-center gap-3 mb-8">
+                        <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
+                            <MessageSquareQuote size={20} />
+                        </div>
+                        <h2 className="text-base font-black tracking-tight uppercase">Mentor's Perspective</h2>
+                    </div>
+
+                    <div className="space-y-8 relative z-10">
+                        {/* AI Advice */}
+                        <div className="space-y-3">
+                            <div className="flex items-center gap-2">
+                                <Sparkles size={14} className="text-yellow-500" />
+                                <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">AI Intelligence</span>
+                            </div>
+                            <div className="p-5 rounded-2xl bg-white/5 border border-white/5 italic text-sm text-blue-100/90 leading-relaxed font-medium">
+                                {averageScore >= 80 ?
+                                    "高スコアを維持できています。特にルーチン化された「発明」が寄与しているようです。来週はこれらを無意識の習慣まで昇華させましょう。" :
+                                    averageScore >= 50 ?
+                                        "全体的に安定していますが、特定のカテゴリでの「怠慢」が平均を下げています。まずは一点突破でその課題を潰すことにフォーカスすべきです。" :
+                                        "生活リズムの乱れが全カテゴリに波及しています。まずは睡眠時間の確保と、朝のルーチンだけを死守することから立て直しましょう。"
+                                }
+                            </div>
+                        </div>
+
+                        {/* Manual Comment */}
+                        <div className="space-y-3">
+                            <div className="flex items-center gap-2">
+                                <UserCircle2 size={14} className="text-zinc-500" />
+                                <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Human Feedback</span>
+                            </div>
+                            <div className="pl-4 border-l-2 border-zinc-800">
+                                <p className="text-sm text-zinc-400 font-medium leading-relaxed">
+                                    {reflection.mentorComment || "メンターからの直接コメントはありません。"}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 4. Inventions Section */}
                 <div className="p-8 rounded-[2rem] bg-zinc-950 border border-zinc-800 relative overflow-hidden group">
                     <div className="absolute -top-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity">
                         <Lightbulb size={160} className="text-yellow-500" />
