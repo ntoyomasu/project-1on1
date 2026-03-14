@@ -25,11 +25,11 @@ export default function RoutinePage() {
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(false);
     const [items, setItems] = useState([
-        { taskName: "朝の白湯を飲む", completed: false, time: "morning" },
-        { taskName: "ストレッチ 10分", completed: false, time: "morning" },
-        { taskName: "今日の一番の目標を確認", completed: false, time: "morning" },
-        { taskName: "スマホを22時以降見ない", completed: false, time: "evening" },
-        { taskName: "日記/振り返り 5分", completed: false, time: "evening" },
+        { taskName: "朝のストレッチ5分", completed: false, time: "morning" },
+        { taskName: "しっかりとした朝食", completed: false, time: "morning" },
+        { taskName: "今日のタスクを確認", completed: false, time: "morning" },
+        { taskName: "スマホは21時半以降みない", completed: false, time: "evening" },
+        { taskName: "寝る前のストレッチ5分", completed: false, time: "evening" },
         { taskName: "明日の準備", completed: false, time: "evening" },
     ]);
     const [sleepHours, setSleepHours] = useState(7);
@@ -104,7 +104,41 @@ export default function RoutinePage() {
             </header>
 
             <section className="space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                {/* Morning Section */}
+                {/* 1. Sleep Control (Moved to TOP) */}
+                <div className="p-8 rounded-[2.5rem] bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800/50 shadow-xl">
+                    <div className="flex items-center justify-between mb-8">
+                        <div className="flex items-center gap-2 text-zinc-400">
+                            <Moon size={18} />
+                            <h3 className="text-xs font-black tracking-widest uppercase">Sleep Quality</h3>
+                        </div>
+                        <div className="flex items-baseline gap-1 bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20">
+                            <span className="text-xl font-black text-blue-400">{sleepHours}</span>
+                            <span className="text-[10px] font-bold text-blue-500/60 uppercase">hrs</span>
+                        </div>
+                    </div>
+
+                    <div className="space-y-6">
+                        <input
+                            type="range"
+                            min="4"
+                            max="12"
+                            step="0.5"
+                            value={sleepHours}
+                            onChange={(e) => setSleepHours(Number(e.target.value))}
+                            className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                        />
+                        <div className="flex justify-between text-[10px] font-bold text-zinc-600 uppercase tracking-tighter">
+                            <span>4.0h</span>
+                            <span>8.0h (Ideal)</span>
+                            <span>12.0h</span>
+                        </div>
+                        <p className="text-[11px] font-medium text-zinc-500 text-center italic mt-4">
+                            "睡眠はパフォーマンスの全ての土台です"
+                        </p>
+                    </div>
+                </div>
+
+                {/* 2. Morning Section */}
                 <div className="space-y-4">
                     <div className="flex items-center gap-2 px-1 text-orange-400">
                         <Sun size={20} />
@@ -130,7 +164,7 @@ export default function RoutinePage() {
                     </div>
                 </div>
 
-                {/* Evening Section */}
+                {/* 3. Evening Section */}
                 <div className="space-y-4">
                     <div className="flex items-center gap-2 px-1 text-blue-400">
                         <Moon size={20} />
@@ -153,27 +187,6 @@ export default function RoutinePage() {
                                 </button>
                             );
                         })}
-                    </div>
-                </div>
-
-                {/* Sleep Control */}
-                <div className="p-6 rounded-[2.5rem] bg-zinc-900/40 border border-zinc-800/80">
-                    <h3 className="text-xs font-black text-zinc-500 tracking-widest uppercase mb-6 text-center">Sleep Quality</h3>
-                    <div className="flex flex-col items-center gap-6">
-                        <div className="flex items-baseline gap-2">
-                            <span className="text-5xl font-black">{sleepHours}</span>
-                            <span className="text-sm font-bold text-zinc-600">hours</span>
-                        </div>
-                        <input
-                            type="range"
-                            min="4"
-                            max="12"
-                            step="0.5"
-                            value={sleepHours}
-                            onChange={(e) => setSleepHours(Number(e.target.value))}
-                            className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
-                        />
-                        <p className="text-[10px] font-bold text-zinc-600 italic">睡眠はパフォーマンスの全ての土台です</p>
                     </div>
                 </div>
             </section>
