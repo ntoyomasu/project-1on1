@@ -17,11 +17,12 @@ import {
     Calendar,
     Clock,
     UserCircle2,
-    MessageSquareQuote
+    MessageSquareQuote,
+    CheckCircle2
 } from "lucide-react";
 import { reflectionService } from "@/services/reflectionService";
 import { analyzeROI, ROIAnalysis } from "@/lib/analytics";
-import { WeeklyReflection } from "@/types/reflection";
+import { WeeklyReflection, DailyRoutine } from "@/types/reflection";
 
 function SummaryView() {
     const router = useRouter();
@@ -30,6 +31,7 @@ function SummaryView() {
 
     const [reflection, setReflection] = useState<WeeklyReflection | null>(null);
     const [allReflections, setAllReflections] = useState<WeeklyReflection[]>([]);
+    const [routines, setRoutines] = useState<DailyRoutine[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -41,6 +43,11 @@ function SummaryView() {
                 ]);
                 setReflection(target);
                 setAllReflections(all);
+
+                if (target) {
+                    const weekRoutines = await reflectionService.getRoutinesForWeek("user_demo", target.weekStartDate.toDate());
+                    setRoutines(weekRoutines);
+                }
             } catch (error) {
                 console.error("Summary fetch error:", error);
             } finally {
@@ -107,6 +114,40 @@ function SummaryView() {
                             averageScore >= 50 ? "着実な進歩が見られます。来週は更なる「伸び代」を追求していきましょう。" :
                                 "課題が明確になった週です。生活リズムの再構築から始めましょう。"}
                     </p>
+                </div>
+            </div>
+
+            {/* Routine Stats Section */}
+            <div className="grid grid-cols-2 gap-4 mb-10">
+                <div className="p-6 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-4">
+                        <CheckCircle2 size={14} className="text-green-400" />
+                        <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Routine Mastery</span>
+                    </div>
+                    <div className="flex items-baseline gap-1">
+                        <span className="text-3xl font-black">{
+                            routines.length > 0
+                                ? Math.round((routines.reduce((acc, r) => acc + (r.items.filter(i => i.completed).length / r.items.length), 0) / 7) * 100)
+                                : 0
+                        }</span>
+                        <span className="text-xs font-bold text-zinc-600">%</span>
+                    </div>
+                    <p className="text-[10px] text-zinc-500 mt-2 font-medium">Weekly consistency rate</p>
+                </div>
+                <div className="p-6 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-4">
+                        <Clock size={14} className="text-blue-400" />
+                        <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Sleep Quality</span>
+                    </div>
+                    <div className="flex items-baseline gap-1">
+                        <span className="text-3xl font-black">{
+                            routines.length > 0
+                                ? (routines.reduce((acc, r) => acc + r.sleepHours, 0) / routines.length).toFixed(1)
+                                : 0
+                        }</span>
+                        <span className="text-xs font-bold text-zinc-600">h</span>
+                    </div>
+                    <p className="text-[10px] text-zinc-500 mt-2 font-medium">Average sleep duration</p>
                 </div>
             </div>
 

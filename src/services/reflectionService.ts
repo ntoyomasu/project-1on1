@@ -221,12 +221,39 @@ export const reflectionService = {
         return null;
     },
 
-    async saveDailyRoutine(userId: string, routine: Omit<DailyRoutine, 'id' | 'createdAt'>): Promise<void> {
-        const docId = `${userId}_${routine.date}`;
-        const docRef = doc(db, ROUTINE_COLLECTION, docId);
-        await setDoc(docRef, {
-            ...routine,
-            createdAt: serverTimestamp()
+    await setDoc(docRef, {
+        ...routine,
+        createdAt: serverTimestamp()
         }, { merge: true });
+    },
+
+    async getRoutinesForWeek(userId: string, weekStartDate: Date): Promise < DailyRoutine[] > {
+    const start = new Date(weekStartDate);
+    const end = new Date(weekStartDate);
+    end.setDate(end.getDate() + 7);
+
+    const startDateStr = start.toISOString().split('T')[0];
+    const endDateStr = end.toISOString().split('T')[0];
+
+    try {
+        const q = query(
+            collection(db, ROUTINE_COLLECTION),
+            where("userId", "==", userId),
+            where("date", ">=", startDateStr),
+            where("date", "<", endDateStr),
+            orderBy("date", "asc")
+        );
+
+        const querySnapshot = await getDocs(q);
+        return querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as DailyRoutine));
+    } catch(error: any) {
+        // インデックス未作成の場合は全取得してフィルタリング
+        const simpleQ = query(collection(db, ROUTINE_COLLECTION), where("userId", "==", userId));
+        const querySnapshot = await getDocs(simpleQ);
+        return querySnapshot.docs
+            .map(doc => ({ id: doc.id, ...doc.data() } as DailyRoutine))
+            .filter(r => r.date >= startDateStr && r.date < endDateStr)
+            .sort((a, b) => a.date.localeCompare(b.date));
     }
+}
 };
