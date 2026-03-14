@@ -1,0 +1,90 @@
+[debug] [2026-03-14T12:39:21.382Z] ----------------------------------------------------------------------
+[debug] [2026-03-14T12:39:21.383Z] Command:       /opt/homebrew/Cellar/node/24.3.0/bin/node /opt/homebrew/bin/firebase deploy --only hosting --project project-1on1-859a2
+[debug] [2026-03-14T12:39:21.383Z] CLI Version:   15.10.0
+[debug] [2026-03-14T12:39:21.383Z] Platform:      darwin
+[debug] [2026-03-14T12:39:21.383Z] Node Version:  v24.3.0
+[debug] [2026-03-14T12:39:21.383Z] Time:          Sat Mar 14 2026 21:39:21 GMT+0900 (Japan Standard Time)
+[debug] [2026-03-14T12:39:21.383Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-14T12:39:21.685Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-14T12:39:21.685Z] > authorizing via signed-in user (nobutaka0225@gmail.com)
+[debug] [2026-03-14T12:39:21.685Z] [iam] checking project project-1on1-859a2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-14T12:39:21.685Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:21.685Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:21.685Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-1on1-859a2:testIamPermissions [none]
+[debug] [2026-03-14T12:39:21.685Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-1on1-859a2:testIamPermissions  x-goog-user-project=project-1on1-859a2
+[debug] [2026-03-14T12:39:21.685Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-1on1-859a2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-14T12:39:22.310Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-1on1-859a2:testIamPermissions 200
+[debug] [2026-03-14T12:39:22.310Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-1on1-859a2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-14T12:39:22.310Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:22.310Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:22.310Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-1on1-859a2 [none]
+[debug] [2026-03-14T12:39:22.660Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-1on1-859a2 200
+[debug] [2026-03-14T12:39:22.660Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-1on1-859a2 {"projectId":"project-1on1-859a2","projectNumber":"433206079516","displayName":"project-1on1","name":"projects/project-1on1-859a2","resources":{"hostingSite":"project-1on1-859a2"},"state":"ACTIVE","etag":"1_ff90a6bb-0522-45ee-b837-06a63df2dc3e"}
+[debug] [2026-03-14T12:39:23.059Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:23.059Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:23.059Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-1on1-859a2/sites pageToken=&pageSize=10
+[debug] [2026-03-14T12:39:23.854Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-1on1-859a2/sites 200
+[debug] [2026-03-14T12:39:23.854Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-1on1-859a2/sites {"sites":[{"name":"projects/project-1on1-859a2/sites/project-1on1-859a2","defaultUrl":"https://project-1on1-859a2.web.app","appId":"1:433206079516:web:d8e53c887f2921bba2afd9","type":"DEFAULT_SITE"}]}
+[debug] [2026-03-14T12:39:23.855Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:23.855Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:23.855Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:433206079516:web:d8e53c887f2921bba2afd9/config [none]
+[debug] [2026-03-14T12:39:24.613Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:433206079516:web:d8e53c887f2921bba2afd9/config 200
+[debug] [2026-03-14T12:39:24.613Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:433206079516:web:d8e53c887f2921bba2afd9/config {"projectId":"project-1on1-859a2","appId":"1:433206079516:web:d8e53c887f2921bba2afd9","storageBucket":"project-1on1-859a2.firebasestorage.app","apiKey":"AIzaSyB8lngC7Jls20VsQexZYKec7LOIIrwa6DU","authDomain":"project-1on1-859a2.firebaseapp.com","messagingSenderId":"433206079516","measurementId":"G-59DTJN2BGJ","projectNumber":"433206079516","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-03-14T12:39:25.629Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:25.629Z] Checked if tokens are valid: true, expires at: 1773493975902
+[debug] [2026-03-14T12:39:25.629Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-1on1-859a2/sites/project-1on1-859a2 [none]
+[debug] [2026-03-14T12:39:26.088Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-1on1-859a2/sites/project-1on1-859a2 200
+[debug] [2026-03-14T12:39:26.089Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/project-1on1-859a2/sites/project-1on1-859a2 {"name":"projects/project-1on1-859a2/sites/project-1on1-859a2","defaultUrl":"https://project-1on1-859a2.web.app","appId":"1:433206079516:web:d8e53c887f2921bba2afd9","type":"DEFAULT_SITE"}
+[info] ▲ Next.js 16.1.6 (Turbopack)
+
+[info] - Environments: .env.local
+
+
+[info]   Creating an optimized production build ...
+
+[info] 
+
+[info] > Build error occurred
+
+[info] Error: Turbopack build failed with 1 errors:
+./src/services/reflectionService.ts:224:11
+Parsing ecmascript source code failed
+  222 |     },
+  223 |
+> 224 |     await setDoc(docRef, {
+      |           ^^^^^^
+  225 |         ...routine,
+  226 |         createdAt: serverTimestamp()
+  227 |         }, { merge: true });
+
+Unexpected token `ident`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Client Component Browser:
+    ./src/services/reflectionService.ts [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/services/reflectionService.ts [Client Component SSR]
+    ./src/app/page.tsx [Client Component SSR]
+    ./src/app/page.tsx [Server Component]
+
+
+    at <unknown> (./src/services/reflectionService.ts:224:11)
+
+[debug] [2026-03-14T12:39:28.413Z] Error: ENOENT: no such file or directory, open '/Users/NOB/Projects/01_my-project/project-1on1/.next/server/middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
