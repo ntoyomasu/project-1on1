@@ -189,23 +189,23 @@ export default function RoutinePage() {
                         })}
                     </div>
                 </div>
-            </section>
 
-            {/* Bottom Save Button */}
-            <div className="fixed bottom-32 left-0 right-0 p-6 z-50">
-                <button
-                    disabled={saving}
-                    onClick={handleSave}
-                    className="w-full max-w-md mx-auto flex items-center justify-center gap-2 p-5 rounded-3xl bg-white text-black font-black hover:bg-zinc-200 transition-all shadow-2xl active:scale-[0.98] disabled:opacity-50"
-                >
-                    {saving ? <Loader2 className="animate-spin" size={20} /> : (
-                        <>
-                            <Save size={20} />
-                            <span>DONE FOR TODAY</span>
-                        </>
-                    )}
-                </button>
-            </div>
+                {/* Save Button - Directly under rituals */}
+                <div className="pt-4 pb-32">
+                    <button
+                        disabled={saving}
+                        onClick={handleSave}
+                        className="w-full flex items-center justify-center gap-2 p-5 rounded-3xl bg-white text-black font-black hover:bg-zinc-200 transition-all shadow-2xl active:scale-[0.98] disabled:opacity-50"
+                    >
+                        {saving ? <Loader2 className="animate-spin" size={20} /> : (
+                            <>
+                                <Save size={20} />
+                                <span>DONE FOR TODAY</span>
+                            </>
+                        )}
+                    </button>
+                </div>
+            </section>
 
             {/* Global Nav-Bar (Universal 4-button) */}
             <nav className="fixed bottom-6 left-6 right-6 h-16 rounded-[2rem] border border-white/5 bg-zinc-900/80 backdrop-blur-xl flex items-center justify-around px-8 shadow-2xl z-50">
