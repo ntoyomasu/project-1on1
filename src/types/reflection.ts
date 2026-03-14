@@ -1,18 +1,33 @@
 import { Timestamp } from 'firebase/firestore';
 
+export type DailyLog = {
+  actual: string;
+  nextWill: string;
+};
+
 export type ImprovementCategory = {
   plan: string;
-  actual: string;
+  dailyLogs: {
+    sat: DailyLog;
+    sun: DailyLog;
+    mon: DailyLog;
+    tue: DailyLog;
+    wed: DailyLog;
+    thu: DailyLog;
+    fri: DailyLog;
+  };
+  learnings: {
+    failure: string; // 失敗（怠慢）
+    success: string; // 成功理由（発明）
+  };
   score: number;
-  good: string;
-  bad: string;
-  nextWill: string;
+  nextWill: string; // 最終的な「来週への意志」
 };
 
 export type ReflectionStatus = 'DRAFT' | 'COMPLETED';
 
 export interface WeeklyReflection {
-  id: string; // YYYY_Wxx
+  id: string;
   userId: string;
   weekStartDate: Timestamp;
   status: ReflectionStatus;

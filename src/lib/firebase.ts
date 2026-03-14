@@ -1,6 +1,5 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore/lite"; // Lite版を使用
 
 const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -11,18 +10,12 @@ const firebaseConfig = {
     appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-// Next.jsのビルド時（プリレンダリング時）にAPIキーがない場合のエラーを回避
 const isConfigValid = !!firebaseConfig.apiKey;
 
-let app;
-if (getApps().length > 0) {
-    app = getApp();
-} else if (isConfigValid) {
-    app = initializeApp(firebaseConfig);
-}
-
-// appが初期化できない場合はダミーオブジェクトを返す（ビルドエラー回避用）
+// Lite版はステートレスなので、初期化の競合や複雑なハンドシェイクが発生しにくい
+const app = getApps().length > 0 ? getApp() : (isConfigValid ? initializeApp(firebaseConfig) : null);
 const db = app ? getFirestore(app) : ({} as any);
-const auth = app ? getAuth(app) : ({} as any);
 
-export { db, auth };
+// Authは干渉を避けるため一旦ダミーにする
+export const auth = {} as any;
+export { db };

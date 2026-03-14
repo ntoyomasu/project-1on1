@@ -8,45 +8,133 @@ import {
     addDoc,
     updateDoc,
     doc,
+    setDoc,
     Timestamp,
-    serverTimestamp
-} from "firebase/firestore";
+    serverTimestamp,
+    getDoc
+} from "firebase/firestore/lite";
 import { db } from "../lib/firebase";
-import { WeeklyReflection, ImprovementCategory } from "../types/reflection";
+import { WeeklyReflection, ImprovementCategory, DailyLog, DailyRoutine } from "../types/reflection";
 
 const COLLECTION_NAME = "weeklyReflections";
+const ROUTINE_COLLECTION = "dailyRoutines";
 
-const emptyCategory: ImprovementCategory = {
-    plan: "",
+const emptyDailyLog: DailyLog = {
     actual: "",
-    score: 0,
-    good: "",
-    bad: "",
     nextWill: "",
 };
 
+const createEmptyCategory = (): ImprovementCategory => ({
+    plan: "",
+    dailyLogs: {
+        sat: { ...emptyDailyLog },
+        sun: { ...emptyDailyLog },
+        mon: { ...emptyDailyLog },
+        tue: { ...emptyDailyLog },
+        wed: { ...emptyDailyLog },
+        thu: { ...emptyDailyLog },
+        fri: { ...emptyDailyLog },
+    },
+    learnings: {
+        failure: "",
+        success: "",
+    },
+    score: 0,
+    nextWill: "",
+});
+
+/**
+ * 日次 Next Will を集約して Plan 文字列を作成する
+ */
+const consolidateDailyWills = (category: ImprovementCategory | undefined): string => {
+    if (!category || !category.dailyLogs) return "";
+
+    const days: (keyof typeof category.dailyLogs)[] = ['sat', 'sun', 'mon', 'tue', 'wed', 'thu', 'fri'];
+    const labels = { sat: '土', sun: '日', mon: '月', tue: '火', wed: '水', thu: '木', fri: '金' };
+
+    const logs = days
+        .map(day => {
+            const will = category.dailyLogs[day].nextWill;
+            return will ? `【${labels[day]}】${will}` : null;
+        })
+        .filter(v => v !== null);
+
+    if (logs.length === 0) return category.nextWill || "";
+    return logs.join('\n');
+};
+
+/**
+ * 古いデータを新スキーマに正規化する
+ */
+const normalizeReflection = (data: any): WeeklyReflection => {
+    const categories: ('study' | 'soccer' | 'life')[] = ['study', 'soccer', 'life'];
+    const normalized = { ...data };
+
+    categories.forEach(cat => {
+        if (!normalized[cat]) {
+            normalized[cat] = createEmptyCategory();
+        } else {
+            if (!normalized[cat].dailyLogs) {
+                normalized[cat].dailyLogs = createEmptyCategory().dailyLogs;
+            }
+            if (!normalized[cat].learnings) {
+                normalized[cat].learnings = createEmptyCategory().learnings;
+            }
+            if (normalized[cat].score === undefined) {
+                normalized[cat].score = 0;
+            }
+            if (normalized[cat].nextWill === undefined) {
+                normalized[cat].nextWill = "";
+            }
+            if (normalized[cat].plan === undefined) {
+                normalized[cat].plan = "";
+            }
+        }
+    });
+
+    if (normalized.inventionNote === undefined) normalized.inventionNote = "";
+    if (normalized.mentorComment === undefined) normalized.mentorComment = "";
+
+    return normalized as WeeklyReflection;
+};
+
 export const reflectionService = {
-    /**
-     * 直近の完了済み振り返りを取得する
-     */
+    // --- Reflections ---
+
     async getLatestCompletedReflection(userId: string): Promise<WeeklyReflection | null> {
-        const q = query(
-            collection(db, COLLECTION_NAME),
-            where("userId", "==", userId),
-            where("status", "==", "COMPLETED"),
-            orderBy("weekStartDate", "desc"),
-            limit(1)
-        );
+        try {
+            const q = query(
+                collection(db, COLLECTION_NAME),
+                where("userId", "==", userId),
+                where("status", "==", "COMPLETED"),
+                orderBy("weekStartDate", "desc"),
+                limit(1)
+            );
 
-        const querySnapshot = await getDocs(q);
-        if (querySnapshot.empty) return null;
+            const querySnapshot = await getDocs(q);
+            if (querySnapshot.empty) return null;
 
-        return { id: querySnapshot.docs[0].id, ...querySnapshot.docs[0].data() } as WeeklyReflection;
+            return normalizeReflection({ id: querySnapshot.docs[0].id, ...querySnapshot.docs[0].data() });
+        } catch (error: any) {
+            if (error.code === 'failed-precondition' || error.message?.includes('index') || error.message?.includes('Bad Request')) {
+                const simpleQ = query(
+                    collection(db, COLLECTION_NAME),
+                    where("userId", "==", userId)
+                );
+                const querySnapshot = await getDocs(simpleQ);
+                if (querySnapshot.empty) return null;
+
+                const docs = querySnapshot.docs
+                    .map(doc => normalizeReflection({ id: doc.id, ...doc.data() }))
+                    .filter(ref => ref.status === "COMPLETED");
+
+                if (docs.length === 0) return null;
+                return docs.sort((a, b) => b.weekStartDate.toMillis() - a.weekStartDate.toMillis())[0];
+            }
+            throw error;
+        }
     },
 
-    /**
-     * 新しい週の振り返りを作成する（スパイラルアップ・ロジック）
-     */
     async createNewWeeklyReflection(userId: string, weekStartDate: Date): Promise<string> {
         const lastReflection = await this.getLatestCompletedReflection(userId);
 
@@ -55,16 +143,16 @@ export const reflectionService = {
             weekStartDate: Timestamp.fromDate(weekStartDate),
             status: "DRAFT",
             study: {
-                ...emptyCategory,
-                plan: lastReflection?.study.nextWill || "",
+                ...createEmptyCategory(),
+                plan: consolidateDailyWills(lastReflection?.study),
             },
             soccer: {
-                ...emptyCategory,
-                plan: lastReflection?.soccer.nextWill || "",
+                ...createEmptyCategory(),
+                plan: consolidateDailyWills(lastReflection?.soccer),
             },
             life: {
-                ...emptyCategory,
-                plan: lastReflection?.life.nextWill || "",
+                ...createEmptyCategory(),
+                plan: consolidateDailyWills(lastReflection?.life),
             },
             inventionNote: "",
             mentorComment: "",
@@ -76,9 +164,6 @@ export const reflectionService = {
         return docRef.id;
     },
 
-    /**
-     * 振り返りを更新する
-     */
     async updateReflection(id: string, updates: Partial<WeeklyReflection>): Promise<void> {
         const docRef = doc(db, COLLECTION_NAME, id);
         await updateDoc(docRef, {
@@ -87,9 +172,6 @@ export const reflectionService = {
         });
     },
 
-    /**
-     * 指定したIDの振り返りを取得する
-     */
     async getReflectionById(id: string): Promise<WeeklyReflection | null> {
         const q = query(
             collection(db, COLLECTION_NAME),
@@ -99,20 +181,52 @@ export const reflectionService = {
         const querySnapshot = await getDocs(q);
         if (querySnapshot.empty) return null;
 
-        return { id: querySnapshot.docs[0].id, ...querySnapshot.docs[0].data() } as WeeklyReflection;
+        return normalizeReflection({ id: querySnapshot.docs[0].id, ...querySnapshot.docs[0].data() });
     },
 
-    /**
-     * ユーザーのすべての振り返りを取得する
-     */
     async getAllReflections(userId: string): Promise<WeeklyReflection[]> {
-        const q = query(
-            collection(db, COLLECTION_NAME),
-            where("userId", "==", userId),
-            orderBy("weekStartDate", "desc")
-        );
+        try {
+            const q = query(
+                collection(db, COLLECTION_NAME),
+                where("userId", "==", userId),
+                orderBy("weekStartDate", "desc")
+            );
 
-        const querySnapshot = await getDocs(q);
-        return querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() } as WeeklyReflection));
+            const querySnapshot = await getDocs(q);
+            return querySnapshot.docs.map(doc => normalizeReflection({ id: doc.id, ...doc.data() }));
+        } catch (error: any) {
+            if (error.code === 'failed-precondition' || error.message?.includes('index') || error.message?.includes('Bad Request')) {
+                const simpleQ = query(
+                    collection(db, COLLECTION_NAME),
+                    where("userId", "==", userId)
+                );
+                const querySnapshot = await getDocs(simpleQ);
+                const docs = querySnapshot.docs.map(doc => normalizeReflection({ id: doc.id, ...doc.data() }));
+                return docs.sort((a, b) => b.weekStartDate.toMillis() - a.weekStartDate.toMillis());
+            }
+            throw error;
+        }
+    },
+
+    // --- Daily Routines (New) ---
+
+    async getDailyRoutine(userId: string, date: string): Promise<DailyRoutine | null> {
+        const docId = `${userId}_${date}`;
+        const docRef = doc(db, ROUTINE_COLLECTION, docId);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+            return { id: docSnap.id, ...docSnap.data() } as DailyRoutine;
+        }
+        return null;
+    },
+
+    async saveDailyRoutine(userId: string, routine: Omit<DailyRoutine, 'id' | 'createdAt'>): Promise<void> {
+        const docId = `${userId}_${routine.date}`;
+        const docRef = doc(db, ROUTINE_COLLECTION, docId);
+        await setDoc(docRef, {
+            ...routine,
+            createdAt: serverTimestamp()
+        }, { merge: true });
     }
 };

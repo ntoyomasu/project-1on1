@@ -21,10 +21,16 @@ export function analyzeROI(reflection: WeeklyReflection): ROIAnalysis[] {
         if (data.score >= 80) status = 'PROFIT';
         else if (data.score < 50) status = 'LOSS';
 
+        // 日次ログを結合して実績サマリーとする
+        const actualSummary = Object.values(data.dailyLogs)
+            .map(log => log.actual)
+            .filter(v => v.trim().length > 0)
+            .join(' | ') || "実績入力なし";
+
         return {
             category: cat === 'study' ? '学習' : cat === 'soccer' ? 'サッカー' : '生活',
             investment: data.plan || "予定設定なし",
-            return: data.actual || "実績入力なし",
+            return: actualSummary,
             score: data.score,
             status
         };
