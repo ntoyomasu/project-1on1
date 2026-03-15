@@ -1,0 +1,10 @@
+
+// これまでに抽出したデータのメモ
+// 2025-08-31: [Text captured in first subagent run]
+// 2025-09-07: [Text captured in first subagent run]
+// 2025-09-14: [Text captured in first subagent run]
+// 2025-09-21: [Text captured in second subagent run]
+// 2025-09-28: [Text captured in second subagent run]
+// 2025-10-05: [Text captured in second subagent run]
+// 2025-10-12: [Text captured in second subagent run]
+// ...
