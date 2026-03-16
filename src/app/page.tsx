@@ -142,7 +142,7 @@ export default function Home() {
                   <div className="flex-1">
                     <h4 className="text-[10px] font-black text-zinc-500 tracking-widest mb-1.5">{cat.title}</h4>
                     <p className="text-sm text-zinc-300 leading-relaxed font-medium">
-                      {cat.data.plan || "目標が設定されていません"}
+                      {cat.data.goalAndMetrics || "目標が設定されていません"}
                     </p>
                   </div>
                   <div className={`text-[10px] font-black px-2 py-1 rounded-lg ${cat.data.score >= 80 ? "bg-green-500/10 text-green-500" : "bg-zinc-800 text-zinc-600"}`}>

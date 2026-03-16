@@ -6,7 +6,8 @@ export type DailyLog = {
 };
 
 export type ImprovementCategory = {
-  plan: string;
+  goalAndMetrics: string; // 今週の目標・予定
+  nextGoalAndMetrics: string; // 来週の目標・予定
   dailyLogs: {
     sat: DailyLog;
     sun: DailyLog;

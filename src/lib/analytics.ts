@@ -2,7 +2,7 @@ import { WeeklyReflection } from "../types/reflection";
 
 export interface ROIAnalysis {
     category: string;
-    investment: string; // plan
+    investment: string; // goalAndMetrics
     return: string;     // actual
     score: number;
     status: 'PROFIT' | 'NEUTRAL' | 'LOSS';
@@ -29,7 +29,7 @@ export function analyzeROI(reflection: WeeklyReflection): ROIAnalysis[] {
 
         return {
             category: cat === 'study' ? '学習' : cat === 'soccer' ? 'サッカー' : '生活',
-            investment: data.plan || "予定設定なし",
+            investment: data.goalAndMetrics || "予定設定なし",
             return: actualSummary,
             score: data.score,
             status

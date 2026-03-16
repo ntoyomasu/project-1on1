@@ -16,7 +16,8 @@ import {
     ChevronUp,
     Target,
     CheckCircle2,
-    ArrowRight
+    ArrowRight,
+    PencilLine
 } from "lucide-react";
 import { reflectionService } from "@/services/reflectionService";
 import { WeeklyReflection } from "@/types/reflection";
@@ -195,13 +196,13 @@ export default function ArchivePage() {
                                                         {catName}
                                                     </div>
 
-                                                    {cat.plan && (
+                                                    {cat.goalAndMetrics && (
                                                         <div className="space-y-1">
                                                             <div className="flex items-center gap-1.5 text-zinc-500">
                                                                 <Target size={12} />
-                                                                <span className="text-[9px] font-black uppercase tracking-wider">Plan</span>
+                                                                <span className="text-[9px] font-black uppercase tracking-wider">Goal & Metrics</span>
                                                             </div>
-                                                            <p className="text-xs text-zinc-300 leading-relaxed bg-white/5 p-2 rounded-lg">{cat.plan}</p>
+                                                            <p className="text-xs text-zinc-300 leading-relaxed bg-white/5 p-2 rounded-lg">{cat.goalAndMetrics}</p>
                                                         </div>
                                                     )}
 
@@ -239,6 +240,16 @@ export default function ArchivePage() {
                                             <p className="text-sm text-zinc-200 leading-relaxed whitespace-pre-wrap">{ref.inventionNote}</p>
                                         </div>
                                     )}
+
+                                    <div className="flex justify-end pt-2">
+                                        <button
+                                            onClick={() => router.push(`/entry?id=${ref.id}`)}
+                                            className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 hover:text-white transition-all text-xs font-black tracking-widest border border-zinc-700/50"
+                                        >
+                                            <PencilLine size={14} />
+                                            EDIT THIS WEEK
+                                        </button>
+                                    </div>
                                 </div>
                             )}
                         </div>

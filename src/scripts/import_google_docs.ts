@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, addDoc, Timestamp } from 'firebase/firestore/lite';
+import { getFirestore, collection, addDoc, Timestamp, query, where, getDocs, deleteDoc, doc } from 'firebase/firestore/lite';
 
 // Load .env.local manually
 const envPath = path.resolve(process.cwd(), '.env.local');
@@ -104,9 +104,9 @@ function parseRawData(content: string) {
 
         // Map Goal -> Plan
         const goals = extractByCategory(goalText);
-        reflection.study.plan = goals.study;
-        reflection.soccer.plan = goals.soccer;
-        reflection.life.plan = goals.life;
+        reflection.study.goalAndMetrics = goals.study;
+        reflection.soccer.goalAndMetrics = goals.soccer;
+        reflection.life.goalAndMetrics = goals.life;
 
         // Map Reality -> Learnings/Actual
         const realityRecords = extractByCategory(realityText);
@@ -187,7 +187,8 @@ function parseRawData(content: string) {
 
 function createEmptyCategory() {
     return {
-        plan: "",
+        goalAndMetrics: "",
+        nextGoalAndMetrics: "",
         dailyLogs: {
             sat: { actual: "", nextWill: "" },
             sun: { actual: "", nextWill: "" },
@@ -214,11 +215,29 @@ async function run() {
     console.log(`Parsed ${reflections.length} reflections.`);
 
     for (const ref of reflections) {
-        console.log(`Importing reflection for date: ${ref.weekStartDate.toDate().toISOString().split('T')[0]}...`);
+        const dateStr = ref.weekStartDate.toDate().toISOString().split('T')[0];
+        console.log(`Importing reflection for date: ${dateStr}...`);
         try {
+            // Check for existing records with the same start date
+            const q = query(
+                collection(db, 'weeklyReflections'),
+                where('userId', '==', USER_ID),
+                where('weekStartDate', '==', ref.weekStartDate)
+            );
+            const snapshot = await getDocs(q);
+
+            // Delete any existing duplicates for this week
+            if (!snapshot.empty) {
+                console.log(`Found ${snapshot.docs.length} existing record(s) for ${dateStr}. Overwriting...`);
+                for (const existingDoc of snapshot.docs) {
+                    await deleteDoc(doc(db, 'weeklyReflections', existingDoc.id));
+                }
+            }
+
+            // Insert new record
             await addDoc(collection(db, 'weeklyReflections'), ref);
         } catch (e) {
-            console.error(`Error importing ${ref.weekStartDate.toDate()}:`, e);
+            console.error(`Error importing ${dateStr}:`, e);
         }
     }
 

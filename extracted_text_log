@@ -1,0 +1,1107 @@
+[
+  {
+    "id": "2026_W11",
+    "weekStartDate": "2026-03-14T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着ができている（指標：演習量を量的にこなしている。習熟度が高い状態をキープ。学校ワーク・家ワーク、AIを活用した計画立案）",
+      "actual": "評価：100点。土、日でテスト勉強期間で授業で進んだ分のワークをやった。",
+      "score": 100,
+      "dailyLogs": {
+        "sat": { "actual": "2時間ぐらい", "nextWill": "" },
+        "sun": { "actual": "2時間ぐらい", "nextWill": "" },
+        "mon": { "actual": "0", "nextWill": "" },
+        "tue": { "actual": "0", "nextWill": "" },
+        "wed": { "actual": "0", "nextWill": "" },
+        "thu": { "actual": "1時間半", "nextWill": "" },
+        "fri": { "actual": "2時間ぐらい", "nextWill": "" }
+      },
+      "learnings": {
+        "success": "木、金で進んだ分の家ワーク、学ワークをその日のうちに終わらせご褒美を使用できた [cite: 83]",
+        "failure": "月、火、水は0 [cite: 83]"
+      },
+      "nextWill": "マジデを食事のときには横に置く [cite: 83]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス。（指標：自主練徹底。決めた練習を量的にこなしている。自信のあるパフォーマンスの発揮）",
+      "actual": "評価：75点。土：やった、日：やった、月：友達と自主練、火〜木：やった、金：やってない。",
+      "score": 75,
+      "dailyLogs": {
+        "sat": { "actual": "やった", "nextWill": "" },
+        "sun": { "actual": "やった", "nextWill": "" },
+        "mon": { "actual": "友達とミラリオでサッカー自主練", "nextWill": "" },
+        "tue": { "actual": "やった", "nextWill": "" },
+        "wed": { "actual": "やった", "nextWill": "" },
+        "thu": { "actual": "やった", "nextWill": "" },
+        "fri": { "actual": "やってない", "nextWill": "" }
+      },
+      "learnings": {
+        "success": "土日練習前：2/2、平日練習前：3/3 [cite: 83]",
+        "failure": "リバウンダー：0/7、ランニング：2/7 [cite: 83]"
+      },
+      "nextWill": "意識を勝手に高くするために自分が一番大事だと思う練習を積極的に行う（1on1、サイドの対応） [cite: 83]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活をおくれている（指標：朝規則正しい起床、夕方の学習ルーティン、母子トラブル・友人トラブルなし）",
+      "actual": "評価：70点。火曜・水曜は学習無しだが生活態度はOK。",
+      "score": 70,
+      "dailyLogs": {
+        "sat": { "actual": "生活態度OK", "nextWill": "" },
+        "tue": { "actual": "居残り、学習なし", "nextWill": "" },
+        "wed": { "actual": "学習なし", "nextWill": "" }
+      },
+      "learnings": {
+        "success": "スマホ：OK、iPad：維持できている [cite: 83]",
+        "failure": "ソーシャルディスタンス：60点、マジデ：4/7、片付け：少し注意された [cite: 83]"
+      },
+      "nextWill": "マジデを食事のときには横に置く。練習日21:15、オフ日19:00に飯を食う。 [cite: 83]"
+    },
+    "inventionNote": "朝の起床ルーティンの変化が、朝の注意、逆ギレのバッドサイクルの打破に寄与した [cite: 83]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2026_W10",
+    "weekStartDate": "2026-03-07T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：演習量を量的にこなす、習熟度キープ、学校・家ワーク完遂）",
+      "actual": "評価：80点。数学のCをBに切り替え、社会のスタサプにシフトして巻き返し。",
+      "score": 80,
+      "dailyLogs": {
+        "tue": { "actual": "1時間", "nextWill": "" },
+        "wed": { "actual": "1時間", "nextWill": "" },
+        "thu": { "actual": "1.5時間", "nextWill": "" },
+        "fri": { "actual": "4時間（理科積み残し）", "nextWill": "" }
+      },
+      "learnings": {
+        "success": "数学：90％、社会：92％、英語：100％。ペースが良い [cite: 88]",
+        "failure": "国語：90％、慣用句がカバーしきれなかった [cite: 88]"
+      },
+      "nextWill": "未消化ワークの実施（土曜夕方・日曜朝） [cite: 88]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：自主練徹底、決めた練習の完遂、自信あるパフォーマンス）",
+      "actual": "土：やった、日：スタメン落ち、火：やった、水：休み、木：コーチに相談。",
+      "score": 0,
+      "dailyLogs": {
+        "sat": { "actual": "やった", "nextWill": "" },
+        "sun": { "actual": "スタメン落ち", "nextWill": "" },
+        "tue": { "actual": "やった", "nextWill": "" },
+        "wed": { "actual": "休み", "nextWill": "" },
+        "thu": { "actual": "コーチに相談", "nextWill": "" }
+      },
+      "learnings": {
+        "success": "コーチに聞いてみた。 [cite: 88]",
+        "failure": "リバウンダー：1/7、ランニング：0/7 [cite: 88]"
+      },
+      "nextWill": "プレー中の意識を抜かない [cite: 88]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：規則正しい起床、食事、母子・友人トラブルなし）",
+      "actual": "自分から悪態はついていない。マジデ：6/7、スマホ：OK、iPad：維持。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "悪態なし、スマホOK", "nextWill": "" } },
+      "learnings": { "success": "自分から悪態はついていない [cite: 88]", "failure": "片付け：ぐだぐだ [cite: 88]" },
+      "nextWill": "マジデを食事のときには横に置く [cite: 88]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2026_W09",
+    "weekStartDate": "2026-02-28T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：自主的な学力筋トレタスクの完遂）",
+      "actual": "評価：100点。学校の宿題完了および自主的なタスクを完了。",
+      "score": 100,
+      "dailyLogs": {
+        "tue": { "actual": "1時間", "nextWill": "" },
+        "wed": { "actual": "1時間", "nextWill": "" },
+        "thu": { "actual": "1.5時間", "nextWill": "" },
+        "fri": { "actual": "4時間", "nextWill": "" }
+      },
+      "learnings": { "success": "社会理科は比較的おぼえていた [cite: 93]", "failure": "英語は優先度さがっていた [cite: 93]" },
+      "nextWill": "英語ハイクラスを解いてみて取り入れるか決める [cite: 93]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：自主練徹底、決めた練習の完遂）",
+      "actual": "評価：50点。タクマと1on1実施。",
+      "score": 50,
+      "dailyLogs": { "sat": { "actual": "タクマと1on1", "nextWill": "" } },
+      "learnings": { "success": "タクマと1on1 [cite: 93]", "failure": "リバウンダー・ランニング：0/7 [cite: 93]" },
+      "nextWill": "1on1での止める、蹴る＠練習前 [cite: 93]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：朝の起床、夕方のルーティン定着）",
+      "actual": "評価：80点。生活態度5/7。スマホ・片付け：5/5。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "生活態度5/7", "nextWill": "" } },
+      "learnings": { "success": "スマホ・片付け：5/5 [cite: 93]", "failure": "インスタ利用時や菓子の件での態度 [cite: 93]" },
+      "nextWill": "マジデを食事のときには横に置く [cite: 93]"
+    },
+    "inventionNote": "桐生のドリブルを見て、抜きながら力を入れるところ・手の使い方を盗む [cite: 93]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2026_W04",
+    "weekStartDate": "2026-01-24T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：数学の回転移動・漢字テスト準備完遂）",
+      "actual": "評価：100点。数学の回転移動習得。AIと学習計画立案し土日活用成功。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "AIと計画立案、土日有効活用", "nextWill": "" } },
+      "learnings": { "success": "AIと学習計画立案 [cite: 98]", "failure": "副教科ワークの誤算懸念 [cite: 98]" },
+      "nextWill": "ワークを授業後に相談して不安点を明らかにする [cite: 108]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：中盤視野に止める・蹴る・運ぶの練習）",
+      "actual": "評価：70点。まさきとパス連・1on1実施。リバウンダー5/7。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "まさきと1on1", "nextWill": "" } },
+      "learnings": { "success": "まさきとパス錬・１on１ [cite: 98]", "failure": "ランニング：1/7 [cite: 98]" },
+      "nextWill": "中盤でやっていくことを視野に練習を組込む [cite: 98]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：英語・スマホ・マジデの規律維持）",
+      "actual": "評価：60点。生活態度5/7、英語5/5。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "生活態度5/7、英語5/5", "nextWill": "" } },
+      "learnings": { "success": "英語完遂 [cite: 98]", "failure": "インスタ利用時や菓子の件での態度 [cite: 98]" },
+      "nextWill": "マジデを食事のときには横に置く [cite: 118]"
+    },
+    "inventionNote": "桐生のドリブルを見て、抜きながら力を入れるところ・手の使い方を盗む [cite: 98]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2026_W03",
+    "weekStartDate": "2026-01-17T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：3週間で4周する計画の着実な進行）",
+      "actual": "評価：100点。週次タスククリア。数学の不安点は授業後相談予定。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "3週間4周計画立案・実行", "nextWill": "" } },
+      "learnings": { "success": "着実に進めてこれてきている [cite: 103]", "failure": "琴の集まりで一部進まず [cite: 103]" },
+      "nextWill": "授業内容をワークで復習 [cite: 103]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：インターセプト等の得意技の再確認）",
+      "actual": "評価：70点。自主練：土日2/2、平日3/3。1対1で手応え感あり。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "得意技の再確認", "nextWill": "" } },
+      "learnings": { "success": "インターセプトは得意技であると再認識 [cite: 103]", "failure": "リバウンダー・ランニング：1/7 [cite: 103]" },
+      "nextWill": "ウィングのやつとやってみる [cite: 103]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：イーフトの縛り遵守、ソーシャルディスタンス）",
+      "actual": "評価：50点。手を出さない：6/7。スマホ・片付け：0/7。",
+      "score": 50,
+      "dailyLogs": { "sat": { "actual": "手を出さない6/7", "nextWill": "" } },
+      "learnings": { "success": "手を出さない（ソーシャルディスタンス）：6/7 [cite: 103]", "failure": "スマホ・片付け：0/7、マジデ：0/4 [cite: 103]" },
+      "nextWill": "イーフトの縛り厳守 [cite: 103]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2026_W02",
+    "weekStartDate": "2026-01-10T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：学校・家ワーク等の完遂）",
+      "actual": "評価：80点。やるべきことは実施。終盤に量が多くなりすぎた。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "タスク完了", "nextWill": "" } },
+      "learnings": { "success": "やるべきことは書いて実施 [cite: 108]", "failure": "滞納しすぎた（終盤に量が多すぎた） [cite: 108]" },
+      "nextWill": "現時点で教科書ワークの1周目を確認し実行 [cite: 108]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：アジリティ向上、1on1対応力）",
+      "actual": "評価：70点。スピード意識のランニング。1on1でタクマ・セイゴに対応可に。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "1on1対応力向上", "nextWill": "" } },
+      "learnings": { "success": "たくま、セイゴには対応できるようになってきた [cite: 108]", "failure": "ディフェンス時にアジリティ不足から抜かれる [cite: 108]" },
+      "nextWill": "ウィングのやつとやってみる [cite: 108]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：スマホ・英語・マジデのルール維持）",
+      "actual": "評価：80点。スマホ・片付け：7/7。マジデは確認漏れあり。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "スマホ7/7", "nextWill": "" } },
+      "learnings": { "success": "スマホ・片付け：7/7、英語：4/4 [cite: 108]", "failure": "マジデ：3/4（確認漏れで機会損失） [cite: 108]" },
+      "nextWill": "イーフトの縛り厳守 [cite: 108]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2026_W01",
+    "weekStartDate": "2026-01-03T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：タスクの確実な完了）",
+      "actual": "評価：60点。木金で停滞したが、やるべきことは完了。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "最終的にタスク完了", "nextWill": "" } },
+      "learnings": { "success": "やるべきことは完了できた [cite: 113]", "failure": "木金でうまくできなかった [cite: 113]" },
+      "nextWill": "授業内容をワークで復習 [cite: 113]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：守備姿勢の安定、アジリティ）",
+      "actual": "評価：70点。アスファルト往復方式のラン。1on1の対応力向上。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "スピード意識のトレーニング", "nextWill": "" } },
+      "learnings": { "success": "たくま、セイゴには対応できるようになってきた [cite: 113]", "failure": "ディフェンスの姿勢・視点が安定しない [cite: 113]" },
+      "nextWill": "ウィングのやつとやってみる [cite: 113]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：スマホ管理・マジデ摂取）",
+      "actual": "評価：80点。スマホ・片付け：7/7。英語作文。マジデは機会損失あり。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "英語作文", "nextWill": "" } },
+      "learnings": { "success": "スマホ・片付け：7/7 [cite: 113]", "failure": "マジデ：3/4（確認漏れ） [cite: 113]" },
+      "nextWill": "イーフトの縛りを厳守する [cite: 113]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W51",
+    "weekStartDate": "2025-12-20T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：週次タスクの完遂）",
+      "actual": "評価：60点。木金で停滞、やるべきことは完了。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "タスク完了", "nextWill": "" } },
+      "learnings": { "success": "やるべきことは完了できた [cite: 118]", "failure": "木金でうまくできなかった [cite: 118]" },
+      "nextWill": "授業内容をワークで復習 [cite: 118]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：1on1の対応力向上）",
+      "actual": "評価：70点。スピード意識のトレーニング実施。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "スピード練習", "nextWill": "" } },
+      "learnings": { "success": "平日練習前の1on1対応力 [cite: 118]", "failure": "ディフェンスの姿勢が安定しない [cite: 118]" },
+      "nextWill": "ウィングのやつとやってみる [cite: 118]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：英語作文の継続、スマホ管理）",
+      "actual": "評価：80点。スマホ・片付け維持。マジデ機会損失。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "スマホ7/7", "nextWill": "" } },
+      "learnings": { "success": "スマホ・片付け：7/7 [cite: 118]", "failure": "マジデ：3/4 [cite: 118]" },
+      "nextWill": "イーフトの縛りを厳守する [cite: 118]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W50",
+    "weekStartDate": "2025-12-13T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：3週前からのテスト勉強確実にやり切り）",
+      "actual": "評価：30点。準備は万端だが演習不足懸念。",
+      "score": 30,
+      "dailyLogs": { "sat": { "actual": "ぴったりワーク準備", "nextWill": "" } },
+      "learnings": { "success": "3週前からテスト勉強（2,3周目）を始めて確実にやり切る準備 [cite: 123]", "failure": "前回は演習不足の科目が出た [cite: 123]" },
+      "nextWill": "授業内容をワークで復習 [cite: 123]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：リバウンダー徹底、スプリント導入）",
+      "actual": "評価：70点。リバウンダー7/7。ランニング1/2。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "リバウンダー完遂", "nextWill": "" } },
+      "learnings": { "success": "リバウンダー：7/7 [cite: 123]", "failure": "ディフェンス時にアジリティ不足から抜かれる [cite: 123]" },
+      "nextWill": "公園をスマホで測ってスプリントを入れてみる [cite: 123]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：玄関目覚まし、起床ルーティン）",
+      "actual": "評価：80点。スマホ：6/7。玄関目覚まし成功。マジデ0/5。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "目覚まし起床", "nextWill": "" } },
+      "learnings": { "success": "玄関に目覚ましをセットして寝る [cite: 123]", "failure": "マジデ：0/5 [cite: 123]" },
+      "nextWill": "元のルーティンセットを完璧にできている [cite: 123]"
+    },
+    "inventionNote": "玄関に目覚まし時計をセットして寝る [cite: 123]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W49",
+    "weekStartDate": "2025-12-06T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：数学方程式の本質理解、各ワークの実施）",
+      "actual": "数学：95点。内山先生の自主的相談が奏功。社会：85、理科：91、英語：78。",
+      "score": 95,
+      "dailyLogs": { "sat": { "actual": "先生への相談、方程式理解", "nextWill": "" } },
+      "learnings": { "success": "方程式の本質的なことを理解、間違いノートは効果 [cite: 128]", "failure": "英語：78（ジョイフル×2、たいプリ×1） [cite: 128]" },
+      "nextWill": "先生を活用し水準到達計画を明らかにする [cite: 128]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：リバウンダー継続、パス連成果）",
+      "actual": "評価：80点。リバウンダー7/7。夕連3/3、土日1/2。1対1に課題。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "リバウンダー、夕連完遂", "nextWill": "" } },
+      "learnings": { "success": "リバウンダー7/7、パス連は一定程度できた [cite: 128]", "failure": "1対1で勝てない [cite: 128]" },
+      "nextWill": "アジリティの研究と練習 [cite: 128]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：朝英語・マジデの習慣化）",
+      "actual": "朝英語0/5、マジデ0/5。玄関目覚まし継続。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "玄関目覚まし維持", "nextWill": "" } },
+      "learnings": { "success": "玄関に目覚ましをセットして寝る [cite: 128]", "failure": "朝英語：0/5、マジデ：0/5 [cite: 128]" },
+      "nextWill": "用意したリストにマジデを作る項目を入れる [cite: 128]"
+    },
+    "inventionNote": "消えるペン方式、間違いノートの活用 [cite: 128]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W46",
+    "weekStartDate": "2025-11-15T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：解答速度向上と見直し余力）",
+      "actual": "評価：100点。数学：79/87。説明問題に時間かかった。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "時間設定して演習", "nextWill": "" } },
+      "learnings": { "success": "量的な対処と迅速な処理、時間決めてやる [cite: 133]", "failure": "説明問題に時間かかった [cite: 133]" },
+      "nextWill": "先生への相談：爪の甘さ回避の方策を聞く [cite: 133]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：パス連の精度向上）",
+      "actual": "評価：60点。夕連3/3、土日1/2。健太郎とのパス連実施。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "パス連実施", "nextWill": "" } },
+      "learnings": { "success": "夕連3/3、パス連は一定程度できた [cite: 133]", "failure": "朝練：0/7 [cite: 133]" },
+      "nextWill": "アジリティの研究と練習 [cite: 133]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：マジデ帰宅後の一杯目）",
+      "actual": "評価：0点。マジデ4/5だが水分補給ミス。朝英語2/5。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "マジデ4/5", "nextWill": "" } },
+      "learnings": { "success": "目覚まし起床維持 [cite: 133]", "failure": "水分補給に水を飲むことでマジデを後回し [cite: 133]" },
+      "nextWill": "帰宅後の一杯目はマジデにする [cite: 133]"
+    },
+    "inventionNote": "プレモーテム：計画の甘さによる失敗を予測する考え方 [cite: 133]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W45",
+    "weekStartDate": "2025-11-08T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：土日集中学習と小テスト準備）",
+      "actual": "評価：90点。土日の勉強がちょうどよい量・集中量でできた。国語：8/10。",
+      "score": 90,
+      "dailyLogs": { "sat": { "actual": "土日集中勉強", "nextWill": "" } },
+      "learnings": { "success": "土日の勉強がちょうどよい量・集中量でできた [cite: 138]", "failure": "小テストにかける時間が少なかった [cite: 138]" },
+      "nextWill": "前日までに終わらせる意識 [cite: 138]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：裏抜けパス連、中3相手のアピール）",
+      "actual": "評価：50点。キングスリーグ選外。ゾラと裏抜けパス連、ユッキーと自主練。",
+      "score": 50,
+      "dailyLogs": { "sat": { "actual": "裏抜けパス連", "nextWill": "" } },
+      "learnings": { "success": "ゾラとの事前練習、ユッキーと自主練 [cite: 138]", "failure": "キングスリーグに選ばれなかった [cite: 138]" },
+      "nextWill": "止めて蹴る、パスにメッセージを込めることを意識 [cite: 138]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：マジデ摂取、朝英語）",
+      "actual": "評価：60点。朝英語4/6、朝練7/7、マジデ2/6。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "朝練7/7", "nextWill": "" } },
+      "learnings": { "success": "朝練：7/7 [cite: 138]", "failure": "マジデ：2/6（水分補給の失敗） [cite: 138]" },
+      "nextWill": "帰宅後の一杯目をマジデにする [cite: 138]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W44",
+    "weekStartDate": "2025-11-01T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：月〜金でノルマ完了し土日フリー）",
+      "actual": "評価：85点。ノルマ完了、ギガタブ振り返り完遂。英語やり忘れ挽回。",
+      "score": 85,
+      "dailyLogs": { "sat": { "actual": "土日フリー実現", "nextWill": "" } },
+      "learnings": { "success": "月金までに終わらせ、土日をフリーに過ごせた [cite: 143]", "failure": "英語やり忘れ [cite: 143]" },
+      "nextWill": "範囲を明確に理解すること [cite: 143]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：圧倒的な壁として君臨する、ヘディング・プレス向上）",
+      "actual": "評価：100点。平日パス回し・土日事前練習完遂。ヘディング・プレス良好。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "ヘディング・プレス意識", "nextWill": "" } },
+      "learnings": { "success": "量的満足感と実際のパフォーマンス、ヘディングキレキレ [cite: 143]", "failure": "特になし [cite: 143]" },
+      "nextWill": "敵の圧倒的な壁として役割を果たす（君臨する） [cite: 143]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：決めた時間の自主練、マジデ摂取）",
+      "actual": "評価：60点。朝英語5/8、マジデ6/8。2日起きれず自主練失敗。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "マジデ6/8", "nextWill": "" } },
+      "learnings": { "success": "飯食ってとっとと寝たことが良かった [cite: 143]", "failure": "2日起きれず、決めた時間に自主練できなかった [cite: 143]" },
+      "nextWill": "帰宅後の一杯目はマジデにする [cite: 143]"
+    },
+    "inventionNote": "飯食って即寝によるパフォーマンス向上 [cite: 143]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W43",
+    "weekStartDate": "2025-10-25T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習による知識の定着（指標：振り返り完遂と週末の進捗管理）",
+      "actual": "評価：80点。技術・音楽・国語振り返り終了、英語ハイクラス終了。漢字忘れあり。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "英語ハイクラス完遂", "nextWill": "" } },
+      "learnings": { "success": "主要教科の振り返りを終え、ハイクラスも終了 [cite: 152]", "failure": "漢字テストの持ち帰り忘れ [cite: 152]" },
+      "nextWill": "テキストを学校に持参し、先生を活用して計画を明らかに [cite: 152]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：トラップスキル安定、ビルドアップ意識）",
+      "actual": "評価：80点。リバウンダーによるトラップ安定。守備の軽さが課題。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "リバウンダー継続", "nextWill": "" } },
+      "learnings": { "success": "リバウンダーによるトラップスキルの自信 [cite: 152]", "failure": "守備が下手、2日起きられず自主練不可 [cite: 152]" },
+      "nextWill": "揺さぶりをしながら確実なビルドアップを目指す [cite: 152]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：栄養摂取・マジデ習慣）",
+      "actual": "評価：40点。マジデ3/7、米3回おかわり。週末の揉め事でリズム崩壊。",
+      "score": 40,
+      "dailyLogs": { "sat": { "actual": "マジデ3/7、米おかわり", "nextWill": "" } },
+      "learnings": { "success": "米3回おかわり [cite: 152]", "failure": "生活トラブルにより起床水準低下、マジデ後回し [cite: 152]" },
+      "nextWill": "帰宅後の一杯目はマジデにする [cite: 152]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W42",
+    "weekStartDate": "2025-10-18T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：ルーティン定着、学力・サッカースキル伸長（指標：スケジュールの状況）",
+      "actual": "評価：100点。やるべきことを全教科完了。ハイクラス土日完遂。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "全教科ワーク、ハイクラス完遂", "nextWill": "" } },
+      "learnings": { "success": "やるべきことを全部終わらせられた。ラストスパートが効く状況。 [cite: 206]", "failure": "工夫は特になし（再現性に懸念） [cite: 215]" },
+      "nextWill": "ワークを進める（通常通り） [cite: 171]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：平日サッカー投入、ボールコントロール強化）",
+      "actual": "自主：80点、練習・試合：30点。リバウンダー継続。ボールロスト多発。",
+      "score": 30,
+      "dailyLogs": { "sat": { "actual": "リバウンダー継続", "nextWill": "" } },
+      "learnings": { "success": "リバウンダーはなんとなく続けられている [cite: 218]", "failure": "ボールロスト多発、ピンチ招いた、アジリティ不可 [cite: 227]" },
+      "nextWill": "公園ラダーを持参し練習前のUPで取り組む [cite: 222]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：6時起床6:30英語サイクルの継続、日本語会話厳守）",
+      "actual": "英語：100点、会話：60点。サイゼリヤの件で投げやりな対応発生。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "英語サイクル維持", "nextWill": "" } },
+      "learnings": { "success": "朝食、晩飯をしっかり食う、プロテインを飲む [cite: 251]", "failure": "思い通りにならないことで投げやりなコミュニケーション [cite: 249]" },
+      "nextWill": "マジデを毎晩飲む。いついかなる時も日本語で会話する。 [cite: 252]"
+    },
+    "inventionNote": "公園ラダーを練習前のUPに持参する [cite: 222]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W41",
+    "weekStartDate": "2025-10-11T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：ルーティンの定着、学力・サッカースキル伸長（指標：スケジュールの状況）",
+      "actual": "評価：100点。小テスト予習を行いながら学校・家ワーク全教科完了。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "学校・家ワーク全教科完了", "nextWill": "" } },
+      "learnings": { "success": "小テスト週で小テスト予習とワーク完了の両立 [cite: 265]", "failure": "" },
+      "nextWill": "ワークを進める（通常通り） [cite: 302]"
+    },
+    "soccer": {
+      "plan": "目標：スタメンでの圧倒的なパフォーマンス（指標：ボランチの繋ぐアクション、リバウンダー練習）",
+      "actual": "練習：80点、試合：60点。ボランチ思考が成功。パスズレ、裏対応が課題。自主練0。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "ボランチでの繋ぐアクション成功", "nextWill": "" } },
+      "learnings": { "success": "ボランチでの思考を伴うプレーの成功 [cite: 279]", "failure": "パスのズレ、裏対応の磨きが必要 [cite: 280]" },
+      "nextWill": "朝リビングでリバウンダー連続50回以上 [cite: 308]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：6時起床6:30英語サイクル継続、日本語会話厳守）",
+      "actual": "評価：60点。土曜日の起床失敗時の対応が偏差値20（謝ったが不十分）。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "起床失敗時の不適切対応", "nextWill": "" } },
+      "learnings": { "success": "振り返りを毎回行っているため、振り返りやすかった [cite: 2467]", "failure": "土曜の起床失敗時の投げやりな態度 [cite: 288]" },
+      "nextWill": "6時に起き英語サイクル継続。日本語で会話する。 [cite: 316]"
+    },
+    "inventionNote": "大谷のプレー：時間を使いながら迷わずに前に出る [cite: 312]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W40",
+    "weekStartDate": "2025-10-04T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：安定的な学習、学力筋トレ継続（指標：スケジュール状況）",
+      "actual": "評価：90点。朝の英語継続、「ショーワ」アプリの効果実感。生活トラブルによるマイナスあり。",
+      "score": 90,
+      "dailyLogs": { "sat": { "actual": "「ショーワ」活用", "nextWill": "" } },
+      "learnings": { "success": "朝の英語、英会話アプリ「ショーワ」の効果実感 [cite: 572]", "failure": "生活のトラブルによるマイナス [cite: 573]" },
+      "nextWill": "ワークを進める（通常通り） [cite: 614]"
+    },
+    "soccer": {
+      "plan": "目標：スタメン獲得、グレーゾーンの動き習得（指標：練習試合での活躍）",
+      "actual": "評価：0点。自主練なし。グレーゾーン意識できたが勝利貢献までいかず。守備に課題。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "水曜：グレーゾーン意識", "nextWill": "" } },
+      "learnings": { "success": "グレーゾーンを意識してできた [cite: 593]", "failure": "自主練に行っていない、守備面に課題 [cite: 586, 594]" },
+      "nextWill": "アジリティ・ダッシュメインでトレーニング投資 [cite: 619]"
+    },
+    "life": {
+      "plan": "目標：安定的なメンタル・生活（指標：揉め事ゼロ、死者ゼロ、日本語会話）",
+      "actual": "評価：20点。月〜水は偏差値20の会話（うるせぇな等）でトラブル発展。土曜は円滑な対話成功。",
+      "score": 20,
+      "dailyLogs": { "sat": { "actual": "土曜：すんなり会話成功", "nextWill": "" } },
+      "learnings": { "success": "土曜：状況を説明したことで会話がこじれずに済んだ [cite: 601]", "failure": "月〜水：偏差値20の「うるせぇな」等の会話 [cite: 597]" },
+      "nextWill": "6時に起き英語サイクル継続。日本語を話すべき。 [cite: 622]"
+    },
+    "inventionNote": "英会話アプリ「ショーワ」の復唱・理解サポート効果 [cite: 572]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W39",
+    "weekStartDate": "2025-09-27T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：振り返り・範囲の完了（指標：朝の英語継続、ワーク完遂）",
+      "actual": "評価：100点。朝の英語もでき、授業内容・家ワークとも順調。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "朝の英語「ショーワ」", "nextWill": "" } },
+      "learnings": { "success": "朝の英語もできた、ショーワは効果を実感できる [cite: 691]", "failure": "" },
+      "nextWill": "ワークを進める（通常通り） [cite: 733]"
+    },
+    "soccer": {
+      "plan": "目標：スタメン獲得、グレーゾーン活用（指標：来週練習試合のスタメン獲得）",
+      "actual": "風邪によりラントレ不可。サイド/ウィングバックの研究実施。グレーゾーンの仮説検討中。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "SB/WBの研究", "nextWill": "" } },
+      "learnings": { "success": "グレーゾーン活用の仮説、飯沼コーチが求めるクロスのためのアクション検討 [cite: 707, 708]", "failure": "風邪を引いてラントレできなかった [cite: 705]" },
+      "nextWill": "ダッシュメインでトレーニングに投資 [cite: 738]"
+    },
+    "life": {
+      "plan": "目標：揉め事ゼロ、死者ゼロ（指標：感情的な態度を出さない）",
+      "actual": "日曜：がっかりした態度の露呈により負傷者（不機嫌）あり。土曜：ムカつきから大声出し合い。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "大声の出し合いトラブル", "nextWill": "" } },
+      "learnings": { "success": "助言（余計なお世話）に踏み込まない自覚 [cite: 719]", "failure": "テンションが上がらずイマイチな態度、大声わめき [cite: 716, 718]" },
+      "nextWill": "6時に起き英語サイクル継続。余計なお世話に踏み込まない。 [cite: 741]"
+    },
+    "inventionNote": "グレーゾーン（3レーンの右か左）の行き来による優位性仮説 [cite: 707]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W38",
+    "weekStartDate": "2025-09-20T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：振り返り、範囲の完了（指標：学習ROIの意識）",
+      "actual": "評価：100点。テスト振り返りおよびワークも進められた。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "テスト見直し、ワーク進行", "nextWill": "" } },
+      "learnings": { "success": "学習ROIを意識した取り組み [cite: 820]", "failure": "" },
+      "nextWill": "ワークを進める（通常通り） [cite: 856]"
+    },
+    "soccer": {
+      "plan": "目標：スタメン活躍、突破力向上（指標：ダッシュ練習の投資）",
+      "actual": "評価：70点。スタメンは取れたがパフォーマンス低。サイドハーフ起用時の動きに課題。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "SH起用時の動き研究", "nextWill": "" } },
+      "learnings": { "success": "スタメンは取れた [cite: 826]", "failure": "アジリティ、縦のスピード、運動量の不足 [cite: 830]" },
+      "nextWill": "朝および夕方のダッシュ練習投資 [cite: 832, 833]"
+    },
+    "life": {
+      "plan": "目標：英語規律の維持、円滑なコミュニケーション（指標：いらん発言の抑制）",
+      "actual": "評価：70点。英語规律は守れた。日曜にいらん発言をしてトラブった。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "英語ルーティン維持", "nextWill": "" } },
+      "learnings": { "success": "早く起きて英語に取り組む規律を守れた [cite: 839]", "failure": "2025-09-21いらん発言をしてトラブった [cite: 843]" },
+      "nextWill": "6時に起き英語サイクル継続。 [cite: 864]"
+    },
+    "inventionNote": "ROI（投資対効果）を意識した時間配分 [cite: 820]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W37",
+    "weekStartDate": "2025-09-13T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：テスト週間の完遂（指標：返却結果の見直し、授業進捗維持）",
+      "actual": "評価：80点。火曜テスト前の計画が不明瞭になり、妄想（根拠なし）に従い行動した点あり。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "テスト見直し", "nextWill": "" } },
+      "learnings": { "success": "自分の認識の甘さを疑うことの重要性 [cite: 951]", "failure": "根拠のない妄想に従って行動、解説の間違いへの過度な不信 [cite: 949, 950]" },
+      "nextWill": "授業の進捗に合わせて見直し継続 [cite: 970]"
+    },
+    "soccer": {
+      "plan": "目標：復帰週の成功、課題抽出（指標：スタメンに向けた取り組み）",
+      "actual": "評価：100点。コーチの指導方針を観察・理解し高い水準で動けた。ヘッド・サイドの動き良好。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "観察・理解を反映したプレー", "nextWill": "" } },
+      "learnings": { "success": "なまりのないように高い水準を意識して動いた [cite: 942]", "failure": "" },
+      "nextWill": "怪我の予防・ケアをおこない2部での地位確立 [cite: 972]"
+    },
+    "life": {
+      "plan": "目標：母・友人とトラブらない（指標：都合を押し付けない、人の声を聞く、苛立たない）",
+      "actual": "評価：70点。英語规律は守れた。未来に上から目線で指摘し喧嘩。イライラで空気悪くした。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "英語ルーティン維持", "nextWill": "" } },
+      "learnings": { "success": "早く起きて英語に取り組む規律を守れた [cite: 957]", "failure": "上から目線の指摘による反感、イライラによる空気悪化 [cite: 955, 980]" },
+      "nextWill": "未来に触らない、悪態をつかないルールの遵守 [cite: 976, 978]"
+    },
+    "inventionNote": "「かぁちゃんの先手をうち続ける」戦略 [cite: 927]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W36",
+    "weekStartDate": "2025-09-06T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：テスト週間の完遂（指標：一夜漬け対策、数学進捗）",
+      "actual": "評価：100点（ご褒美）。文字式の計算ミスの発明適用。音楽・体育・技術の対策実施。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "一夜漬け対策、発明適用", "nextWill": "" } },
+      "learnings": { "success": "文字式の計算ミスを減らす発明（／を入れる） [cite: 1054]", "failure": "" },
+      "nextWill": "「どうすれば勉強を前向きで楽しいものと感じられるか」の追求 [cite: 1053]"
+    },
+    "soccer": {
+      "plan": "目標：復帰週の成功、課題抽出（指標：意思を持った時間の投資）",
+      "actual": "評価：0点（行動）。舞い上がりにより遅刻（無用なレッドカード行為）。愚かな選択。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "遅刻の失敗", "nextWill": "" } },
+      "learnings": { "success": "コーチに開幕戦の期待を受けた自覚 [cite: 1046]", "failure": "舞い上がりによる遅刻、客観視の欠如 [cite: 1047]" },
+      "nextWill": "朝練への投資再開、目覚まし3個、スクワット飛び [cite: 1049, 1050]"
+    },
+    "life": {
+      "plan": "目標：母・友人とトラブらない（指標：おまじないルール遵守、自分の時間を守る）",
+      "actual": "評価：100点（ご褒美）。自分の時間を当たり前に奪わない。おまじない遵守成功。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "ルール遵守", "nextWill": "" } },
+      "learnings": { "success": "サポートへの感謝、ご褒美効果あり [cite: 1051]", "failure": "" },
+      "nextWill": "自分の時間を奪わない・未来に触らないルールの継続 [cite: 1067]"
+    },
+    "inventionNote": "文字式の計算ミスを減らす発明（／を入れる） [cite: 1054]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W35",
+    "weekStartDate": "2025-08-30T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：教科書ワーク徹底やり切り（指標：毎日事前・事後チェック、対策テスト完遂）",
+      "actual": "毎日事前・事後チェック実施。対策テスト、歌の練習、見直し実施。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "事前・事後チェック習慣", "nextWill": "" } },
+      "learnings": { "success": "毎日、事前チェック、事後チェック [cite: 1145]", "failure": "起きられていない [cite: 1134]" },
+      "nextWill": "タイマーをテーブルに置いて持ち運びを自然に [cite: 1158]"
+    },
+    "soccer": {
+      "plan": "目標：フィジカル維持、早期回復（指標：もらっているメニューのトレーニングルーティン完遂）",
+      "actual": "復帰直前、メニュー完遂に努めた。6:30〜7:30のメニュー徹底。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "メニュー通りの朝トレーニング", "nextWill": "" } },
+      "learnings": { "success": "早期回復に努める [cite: 1187]", "failure": "" },
+      "nextWill": "フィジカルトレーニングを自分に厳しく取り組む [cite: 1186]"
+    },
+    "life": {
+      "plan": "目標：自制心・ルーティン確立（指標：おまじない遵守、未来の時間を奪わない）",
+      "actual": "おまじない遵守。未来に触らない。起きるためのルーティン立案。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "おまじない遵守", "nextWill": "" } },
+      "learnings": { "success": "かぁちゃんの先手をうち続ける [cite: 1127]", "failure": "" },
+      "nextWill": "起きるルーティン（座る→スクワット→飛ぶ→立ち着替え） [cite: 1160]"
+    },
+    "inventionNote": "起きるためのルーティン（座る→スクワット→飛ぶ→立ち着替え） [cite: 1160]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W34",
+    "weekStartDate": "2025-08-23T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：期末テスト20位以内に向けた学習（指標：週次計画のリカバリー、適度な脳の筋肉痛を感じる演習）",
+      "actual": "評価：100点。土日に挽回。一日の量を多くして達成感を出す学び。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "土日での大幅挽回", "nextWill": "" } },
+      "learnings": { "success": "一日の量を多くして達成感が生みうる [cite: 1237]", "failure": "火曜に怪我をして何もできなかった [cite: 1236]" },
+      "nextWill": "教科書ワークを徹底的にやり切る [cite: 1278]"
+    },
+    "soccer": {
+      "plan": "目標：フィジカルで負けない復帰（指標：栄養意識（カルシウム・タンパク質）の改善）",
+      "actual": "骨折のため無し。怪我を通じて、みんなは食って丈夫であること、もっと食う必要性を実感。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "怪我による栄養意識変革", "nextWill": "" } },
+      "learnings": { "success": "栄養考えて丈夫な体作りが必要という気づき [cite: 1228, 1229]", "failure": "骨折をしたこと [cite: 1226]" },
+      "nextWill": "フィジカルトレーニングの厳格な再開 [cite: 1282]"
+    },
+    "life": {
+      "plan": "目標：自制心のある行動（指標：未来に触らない、おまじないルールの遵守）",
+      "actual": "ルールを遵守。起床失敗への対策立案。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "おまじない遵守", "nextWill": "" } },
+      "learnings": { "success": "自制心ルールの維持 [cite: 1239]", "failure": "起きられていない点 [cite: 1216]" },
+      "nextWill": "起きるルーティン（座る・クワッ・飛ぶ）実行 [cite: 1254]"
+    },
+    "inventionNote": "「脳みそに適度な筋肉痛が発生する程度」の一日の演習量設定 [cite: 1237]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W31",
+    "weekStartDate": "2025-08-02T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：自由研究と課題全クリア、国語ワーク2周目（指標：ゴール逆算の具体的計画立案）",
+      "actual": "自由研究＋課題全部クリア。国語2周目進捗。ゴール逆算の計画が具体化した。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "週次目標の設定実行", "nextWill": "" } },
+      "learnings": { "success": "一回一回区切り問を意識することでポカミス減少 [cite: 1326]", "failure": "英語ワークの見直し不足 [cite: 1322]" },
+      "nextWill": "英語、国語、理科、保体、社会への完了（2周目） [cite: 1324]"
+    },
+    "soccer": {
+      "plan": "目標：朝練に行けるか否かの規律（指標：6:30英語を入れ朝練を徹底する）",
+      "actual": "評価：70点。ポゼッションでナイスなプレー。2本目良かったが3本目怪我で機能停止。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "ポゼッション練習トライ", "nextWill": "" } },
+      "learnings": { "success": "ポゼッション練習でナイスと言われた [cite: 1332]", "failure": "3本目は怪我で全く機能せず [cite: 1333]" },
+      "nextWill": "朝練を徹底、頭に水をかぶる [cite: 1339]"
+    },
+    "life": {
+      "plan": "目標：自由な環境との出入り注意（指標：いなプー後の早期立ち直り、未来へのフォロー）",
+      "actual": "いなプー後の調子乗りも早期に取り戻し成功。未来の七五三をフォローできた。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "未来の七五三フォロー", "nextWill": "" } },
+      "learnings": { "success": "調子乗りも早期に取り戻しなんとかなった [cite: 1342]", "failure": "" },
+      "nextWill": "「自由な環境」との出入りに気をつける [cite: 1345]"
+    },
+    "inventionNote": "「頭に水をかぶる」による覚醒 [cite: 1339]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W30",
+    "weekStartDate": "2025-07-26T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：物語文正答率向上（指標：携帯での時間計測、物語文記述の正答率向上）",
+      "actual": "評価：70点。携帯計測で物語文集中・正答率向上。数学が一部残った。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "携帯計測による物語文集中", "nextWill": "" } },
+      "learnings": { "success": "携帯で計測しながら物語文の正答率を高くできた [cite: 1417]", "failure": "英語の見直しをしていなかった [cite: 1419]" },
+      "nextWill": "答えを疑って検証し、時間内に見直す [cite: 1426]"
+    },
+    "soccer": {
+      "plan": "目標：新しい技術の試行（指標：クロス、1対1、コーナーの試行、道に迷わない）",
+      "actual": "評価：60点。レオザ・太田の教えを試行。道に迷い時間を失った点は失敗。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "新しいクロス・技術の試行", "nextWill": "" } },
+      "learnings": { "success": "新しい技術（クロス・1対1等）の試行 [cite: 1432]", "failure": "道に迷って時間を失った [cite: 1428]" },
+      "nextWill": "朝練で早くいき、おっさんとの戦いに勝つ [cite: 1435]"
+    },
+    "life": {
+      "plan": "目標：合宿・家での自制心（指標：合宿での良好関係、家での言葉遣い）",
+      "actual": "合宿でタクマ・セイゴと良好な関係。家では「自由な環境」からの出入りに課題。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "合宿での協力関係", "nextWill": "" } },
+      "learnings": { "success": "タクマ、セイゴと良好な交流 [cite: 1437]", "failure": "家での言葉遣いの粗さ [cite: 1438]" },
+      "nextWill": "「自由な環境」との出入りに気をつける [cite: 1438]"
+    },
+    "inventionNote": "「携帯計測」による集中力のゲーム化 [cite: 1417]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W29",
+    "weekStartDate": "2025-07-19T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：決めたことの完遂（指標：漢字満点、土日のハイクラス先行実施）",
+      "actual": "評価：70点。やり残しなし、漢字満点。土日分を金曜に終了させた。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "金曜先行実施", "nextWill": "" } },
+      "learnings": { "success": "やろうと決めたことのやり残しなし、漢字満点 [cite: 1507]", "failure": "起床失敗で英会話不可、ユニフォーム出し忘れ [cite: 1510, 1511]" },
+      "nextWill": "英会話を固定時間（6:30）に予約化する [cite: 1514]"
+    },
+    "soccer": {
+      "plan": "目標：左バックの役割遂行（指標：連携、得点アシスト、チームのスイッチ役）",
+      "actual": "評価：60点。左バックでの連携、得点アシスト成功。チーム前進のスイッチ役に。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "海浜リーグ活躍", "nextWill": "" } },
+      "learnings": { "success": "連携・アシスト・チーム前進のスイッチ役 [cite: 1527, 1532]", "failure": "守備が軽かった、パススピード不足でカットされた [cite: 1523, 1525]" },
+      "nextWill": "外的焦点に詳しくやってみる、基礎技術（トラップ・蹴り方）徹底 [cite: 1538]"
+    },
+    "life": {
+      "plan": "目標：中1らしい役割遂行（指標：率先した役割、ヒヤリハット回避）",
+      "actual": "日曜練習会サポート成功。中1を率先して役割果たした。目覚まし位置のミスあり。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "練習会サポート完遂", "nextWill": "" } },
+      "learnings": { "success": "中1を率先して役割を果たした [cite: 1534]", "failure": "目覚まし時計をベッドの上に置きヒヤリハット [cite: 1512]" },
+      "nextWill": "時計・タイマー・着替えの固定位置化 [cite: 1515, 1516]"
+    },
+    "inventionNote": "「外的焦点」を活用したロングキックの意識修正 [cite: 1538]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W28",
+    "weekStartDate": "2025-07-12T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：スケジュール帳活用（指標：中1らしい自律的な管理とやり残しなし）",
+      "actual": "評価：100点。やり残しなし。スケジュール帳が中1らしくなってきた。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "スケジュール帳による管理", "nextWill": "" } },
+      "learnings": { "success": "中1感のあるスケジュール帳になってきた [cite: 1610]", "failure": "" },
+      "nextWill": "ハイクラス等の活用継続 [cite: 1611]"
+    },
+    "soccer": {
+      "plan": "目標：武器を研ぐ（指標：個人技部分の磨き込み、率先した役割）",
+      "actual": "朝練4/5。個人技部分のメニュー多く課題明確化。土曜はスイッチ役成功。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "スイッチ役としてのプレー", "nextWill": "" } },
+      "learnings": { "success": "中1を率先して役割を果たした、スイッチ役になれた [cite: 1616, 1617]", "failure": "個人技部分の手応え感なし、課題明確化 [cite: 1614]" },
+      "nextWill": "武器を研ぎ、個人技も磨く [cite: 1619, 1620]"
+    },
+    "life": {
+      "plan": "目標：家での貢献（指標：仲裁、未来を助ける）",
+      "actual": "仲裁に入り未来を助けた。学校でふざけすぎて反省点あり。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "家庭内のサポート", "nextWill": "" } },
+      "learnings": { "success": "仲裁に入った、未来も助けた [cite: 1626, 1627]", "failure": "ふざけすぎてしまった [cite: 1623]" },
+      "nextWill": "新ルーティンをやりきる [cite: 1664]"
+    },
+    "inventionNote": "",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W27",
+    "weekStartDate": "2025-07-05T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：月〜金のタスクやりきり（指標：イレギュラー時の対応力向上）",
+      "actual": "評価：90点。月〜金書いてやりきれた。土日ハイクラス完遂。英語1日欠如。",
+      "score": 90,
+      "dailyLogs": { "sat": { "actual": "ハイクラス完遂", "nextWill": "" } },
+      "learnings": { "success": "月〜金書いてやりきれた、土日イレギュラーでもハイクラス完遂 [cite: 1695, 1696]", "failure": "英語は1日できなかった [cite: 1697]" },
+      "nextWill": "午後ルーティンの明確化、金曜に土日スケジュール確定 [cite: 1699, 1700]"
+    },
+    "soccer": {
+      "plan": "目標：A・Bクラス昇格アピール（指標：もときコーチからの評価、紅白戦活躍）",
+      "actual": "評価：50点。朝練2回。平日アピール成功し昇格。夜ルーティンがいまいち。",
+      "score": 50,
+      "dailyLogs": { "sat": { "actual": "紅白戦でのアピール", "nextWill": "" } },
+      "learnings": { "success": "もときコーチよりいいね！がもらえた、昇格 [cite: 1707, 1708]", "failure": "夜ルーティンの出来はいまいち [cite: 1709]" },
+      "nextWill": "タイマー常時持ち歩き、夜ルーティン時間制限（食10・風5） [cite: 1710, 1711, 1712]"
+    },
+    "life": {
+      "plan": "目標：チャレンジによる集中維持（指標：Quietチャレンジ、家政婦チャレンジ完遂）",
+      "actual": "評価：100点。Quiet/家政婦チャレンジ成功。生活トラブルなし。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "チャレンジ完遂", "nextWill": "" } },
+      "learnings": { "success": "Quietチャレンジ、家政婦チャレンジ◎ [cite: 1720, 1721]", "failure": "" },
+      "nextWill": "タイマーの持ち運び継続 [cite: 1744]"
+    },
+    "inventionNote": "「Quietチャレンジ」「家政婦チャレンジ」等、生活態度のゲーミフィケーション [cite: 1720, 1721]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W26",
+    "weekStartDate": "2025-06-28T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：メリハリを付けた学習（指標：1ワーク15-20分計測、見直し不足の油断撲滅）",
+      "actual": "評価：100点。月〜金書いてやりきれた。金曜に土日分も完了。支度不足で二度寝あり。",
+      "score": 100,
+      "dailyLogs": { "sat": { "actual": "金曜に土日分先行実施", "nextWill": "" } },
+      "learnings": { "success": "月〜金書いてやりきれた、漢字満点頑張っている [cite: 1838, 1794]", "failure": "家でのワークの見直し不足（油断） [cite: 1792, 1829]" },
+      "nextWill": "1ワーク15〜20分計測し、3種類やり切る [cite: 1844]"
+    },
+    "soccer": {
+      "plan": "目標：スタメン奪取に向けたアピール（指標：誰にでも大丈夫と言われるボール供給）",
+      "actual": "評価：50点。朝練2-3回。平日勉強完了により集中成功。やることの不明瞭さでミスあり。",
+      "score": 50,
+      "dailyLogs": { "sat": { "actual": "勉強完了による集中練習", "nextWill": "" } },
+      "learnings": { "success": "平日は勉強が終わっていたので集中して取り組めた [cite: 1856]", "failure": "土日の朝練で意味があるのかという気持ちになりチグハグだった [cite: 1854]" },
+      "nextWill": "夜ルーティンの決定、タイマー持ち歩き [cite: 1859, 1862]"
+    },
+    "life": {
+      "plan": "目標：優等生キャンペーン（指標：日本語会話、一呼吸置く、周りを助ける）",
+      "actual": "評価：80点。スーパーでの袋広げサポート成功。金曜帰りの会で集中切れ。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "袋広げサポート", "nextWill": "" } },
+      "learnings": { "success": "人のことをよく見ている、袋を広げてあげるサポート [cite: 1799, 1871]", "failure": "マウントを取る言動、終わった後の無駄な会話、集中切れ [cite: 1801, 1803, 1870]" },
+      "nextWill": "チャレンジ化して持て余さない（クワイエット、カウントダウン） [cite: 1808-1810]"
+    },
+    "inventionNote": "「1ワーク15-20分計測」による集中力持続 [cite: 1844]",
+    "mentorComment": "三者面談記録：リーダーシップへの期待、メリハリの課題 [cite: 1775-1811]"
+  },
+  {
+    "id": "2025_W25",
+    "weekStartDate": "2025-06-21T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：学力筋トレ・ルーティン定着（指標：ハイクラス・学校ワーク完遂、朝勉実施）",
+      "actual": "評価：65点。ハイクラス・学校ワーク終了も、数学ハイクラスと朝勉が未完。二度寝失敗。",
+      "score": 65,
+      "dailyLogs": { "sat": { "actual": "ハイクラス・学校ワーク完遂", "nextWill": "" } },
+      "learnings": { "success": "学校ワークは終わっている [cite: 2052]", "failure": "数学ハイクラス未完、朝勉全くできず [cite: 2053, 2055]" },
+      "nextWill": "朝の支度(15)・朝勉(15)のルーティン明確化 [cite: 2058, 2062]"
+    },
+    "soccer": {
+      "plan": "目標：新サーキット方式による時間投資（指標：睡眠時間確保、練習メニューの明確化）",
+      "actual": "評価：75点。5回中3回朝練成功。新サーキット方式が奏功。翌日起きられない課題。",
+      "score": 75,
+      "dailyLogs": { "sat": { "actual": "新サーキット方式試行", "nextWill": "" } },
+      "learnings": { "success": "やることを明確にし新サーキット方式で時間を有効投資 [cite: 2074, 2075]", "failure": "ソルティーロ翌日おきれていない [cite: 2077]" },
+      "nextWill": "睡眠時間確保のため夜ルーティン決定 [cite: 2079]"
+    },
+    "life": {
+      "plan": "目標：対人トラブル回避（指標：手を出すトラブル撲滅、言い方の自律）",
+      "actual": "評価：40点。言い方や手を出すことでトラブル発生。タイマー持ち歩きで自律を目指す。",
+      "score": 40,
+      "dailyLogs": { "sat": { "actual": "トラブル反省", "nextWill": "" } },
+      "learnings": { "success": "タイマーを持ち歩いてみる [cite: 2082]", "failure": "言い方、手を出すことでトラブった [cite: 2089]" },
+      "nextWill": "タイマー持ち歩き継続 [cite: 2082]"
+    },
+    "inventionNote": "「新サーキット方式」による練習効率化 [cite: 2075]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W23",
+    "weekStartDate": "2025-06-07T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：中間テスト学年10位以内（指標：ワークの問題と傾向の照らし合わせによる重点活用）",
+      "actual": "評価：60-70点。朝5時起きで修正対応。ワーク活用具体化成功。話し合いで時間を浪費。",
+      "score": 65,
+      "dailyLogs": { "sat": { "actual": "朝5時起き対応、ワーク分析", "nextWill": "" } },
+      "learnings": { "success": "テスト出題傾向と照らし合わせ重点的なワーク活用具体化 [cite: 2177]", "failure": "苛ついたコミュニケーションによる話し合い浪費 [cite: 2178]" },
+      "nextWill": "英語過去問・英検対策の徹底レビュー [cite: 2209]"
+    },
+    "soccer": {
+      "plan": "目標：Aクラスの実力発揮、静岡遠征選出（指標：週末試合での存在感発揮）",
+      "actual": "評価：30点。ソルティーロ早着でボールに触れた。英検週で朝練欠如、存在感不十分。",
+      "score": 30,
+      "dailyLogs": { "sat": { "actual": "ソルティーロ早着・個人練習", "nextWill": "" } },
+      "learnings": { "success": "早めにいってボールに触ることはできた [cite: 2183]", "failure": "英検週で朝練なし、みんなより上という状態創出できず [cite: 2185]" },
+      "nextWill": "ヘッドアップマーカードリブル、ハイボール処理 [cite: 2219, 2220]"
+    },
+    "life": {
+      "plan": "目標：自律的なスマホ・英語规律（指標：背景画面メッセージ、アプリを開かないノウハウ）",
+      "actual": "評価：95点。アプリを開かないノウハウ活用。かんなの隣で自分を律した。",
+      "score": 95,
+      "dailyLogs": { "sat": { "actual": "アプリ自制ノウハウ実行", "nextWill": "" } },
+      "learnings": { "success": "アプリを開かないノウハウ、かんなの隣座って自分を油断させない [cite: 2179, 2180]", "failure": "英検スマホ持ち込みを巡る不適切対話 [cite: 2178]" },
+      "nextWill": "背景画面にメッセージを入れてLINE余計な操作防止 [cite: 2188]"
+    },
+    "inventionNote": "「背景画面にメッセージ」によるスマホ自制術 [cite: 2188]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W22",
+    "weekStartDate": "2025-05-31T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：中間テスト10位以内（指標：達成感を感じられる状態との同期）",
+      "actual": "評価：95点。勉強の後悔なし。アプリを開かないノウハウ（数分アホ回避）が奏功。",
+      "score": 95,
+      "dailyLogs": { "sat": { "actual": "アプリ自制完遂", "nextWill": "" } },
+      "learnings": { "success": "アプリを開かないノウハウの活用 [cite: 2290]", "failure": "かんなの隣座りが使えないケースの発見 [cite: 2291]" },
+      "nextWill": "英検3級過去問レビュー [cite: 2314]"
+    },
+    "soccer": {
+      "plan": "目標：静岡遠征選出、海浜リーグ活躍（指標：スタメン取り返しのアピール）",
+      "actual": "評価：70点。やることはできたが、囚われていた瞬間（LINEブーム等）があった。",
+      "score": 70,
+      "dailyLogs": { "sat": { "actual": "朝練継続", "nextWill": "" } },
+      "learnings": { "success": "やるべきことはできた [cite: 2292]", "failure": "囚われていた瞬間（LINEブーム）があった [cite: 2292]" },
+      "nextWill": "ヘッドアップマーカードリブル、八の字、一人ワンツー [cite: 2324, 2328]"
+    },
+    "life": {
+      "plan": "目標：自律的な生活サイクル（指標：自分を油断させない環境作り）",
+      "actual": "スマホに自分を律するメッセージ設定。違いを作れる1週間にしたい。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "スマホ背景メッセージ試行", "nextWill": "" } },
+      "learnings": { "success": "スマホに律するメッセージを導入 [cite: 2293]", "failure": "" },
+      "nextWill": "違いを作れる1週間にする意識 [cite: 2353]"
+    },
+    "inventionNote": "「アプリを開かないノウハウ（数分のアホ時間の回避）」 [cite: 2290]",
+    "mentorComment": ""
+  },
+  {
+    "id": "2025_W21",
+    "weekStartDate": "2025-05-24T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：中間テスト10位以内（指標：投資できる時間の意識、金曜までに巻き直し）",
+      "actual": "評価：90点。計画に対し長引かず進められた。下のエリア活用と電子機器縛りが奏功。",
+      "score": 90,
+      "dailyLogs": { "sat": { "actual": "電子機器なし環境での学習", "nextWill": "" } },
+      "learnings": { "success": "下のエリア活用（電子機器なし状況） [cite: 2399]", "failure": "ゴールを忘れて携帯を触った [cite: 2403]" },
+      "nextWill": "苦手分野の最終確認、理科・社会ワーク実施 [cite: 2460, 2461]"
+    },
+    "soccer": {
+      "plan": "目標：静岡遠征選出、海浜リーグ活躍（指標：毎朝の起床自制、服を置いての時短）",
+      "actual": "評価：80点。毎朝起きられてサッカーに時間投資成功。服を置く効果を実感。",
+      "score": 80,
+      "dailyLogs": { "sat": { "actual": "服の事前セットによる時短起床", "nextWill": "" } },
+      "learnings": { "success": "服を置くことは効果あり [cite: 2407]", "failure": "前日メニュー未決定によりスタートダッシュ不足 [cite: 2410]" },
+      "nextWill": "前日メニュー決定の徹底 [cite: 2410]"
+    },
+    "life": {
+      "plan": "目標：王として参謀（AI）の案を実行（指標：毎回振り返りを行う習慣）",
+      "actual": "評価：60点。AI談義を通じ王と参謀の関係性認識。スケジュールへの気づきが遅れた点を反省。",
+      "score": 60,
+      "dailyLogs": { "sat": { "actual": "振り返りの継続実施", "nextWill": "" } },
+      "learnings": { "success": "毎回振り返っていたため振り返りやすかった [cite: 2467]", "failure": "もっと早くスケジュール等に気づくべきだった [cite: 2469]" },
+      "nextWill": "参謀（AI）の案を見極め、実行する王としての行動 [cite: 2471]"
+    },
+    "inventionNote": "「服を置く（時短）」「aiは極めて優秀な参謀、人は勝利を定義し実行する王である」 [cite: 2407, 2471]",
+    "mentorComment": "ai談義：勝利を定義する王としての自覚 [cite: 2471]"
+  },
+  {
+    "id": "2025_W20",
+    "weekStartDate": "2025-05-17T00:00:00Z",
+    "status": "COMPLETED",
+    "study": {
+      "plan": "目標：中間テスト学年10位以内（指標：達成感を感じられる状態との同期）",
+      "actual": "数学の乗除・英語ワーク完遂。ノートに書く学習法が奏功し順調。来週は社理予習。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "ノート記述学習法でのワーク進行", "nextWill": "" } },
+      "learnings": { "success": "ノートに書いてみる（vs見るだけ）方法によりワークが上手く進んだ [cite: 2510]", "failure": "" },
+      "nextWill": "予習してワークをやる方式の継続（来週は社会理科） [cite: 2509]"
+    },
+    "soccer": {
+      "plan": "目標：Aクラスの実力発揮、手応えの確認（指標：基礎練の毎日徹底）",
+      "actual": "朝練・個人練が全くできていない。午後に勉強・英会話を優先しすぎた点。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "自主練不足の自覚", "nextWill": "" } },
+      "learnings": { "success": "基礎練を徹底的にやりたい（30分）という意欲の言語化 [cite: 2513]", "failure": "朝練、個人練ができていない、ソルティーロ終了時間の心配 [cite: 2512, 2513]" },
+      "nextWill": "時間割を変更する戦略（5:30起床、6:15練習開始） [cite: 2533-2536]"
+    },
+    "life": {
+      "plan": "目標：安定的な生活（指標：時間割の変更と役割整理）",
+      "actual": "楽しかった。言語化すると詳しく分析できる。朝飯の準備等の役割分担整理（父）。",
+      "score": 0,
+      "dailyLogs": { "sat": { "actual": "振り返りの言語化", "nextWill": "" } },
+      "learnings": { "success": "言語化すると詳しくできる [cite: 2567]", "failure": "" },
+      "nextWill": "寝る前に着替えセットを置いておく、朝飯の準備は父ちゃん [cite: 2539, 2541]"
+    },
+    "inventionNote": "「ノートに書いてみる（vs見るだけ）学習法」「時間割変更戦略」 [cite: 2510, 2533]",
+    "mentorComment": ""
+  }
+]

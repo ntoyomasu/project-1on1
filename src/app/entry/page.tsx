@@ -174,19 +174,15 @@ function EntryForm() {
 
             <section className="space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
                 <>
-                    {/* 1. Goal (Plan) - EDITABLE */}
+                    {/* 1. Goal (Plan) - READONLY */}
                     <div className="space-y-4">
                         <h3 className="text-sm font-semibold text-zinc-500 flex items-center gap-2">
-                            <PencilLine size={16} className="text-blue-400" />
-                            今週の予定・目標（編集可能）
+                            <Target size={16} className="text-blue-400" />
+                            今週の予定・目標
                         </h3>
-                        <textarea
-                            rows={4}
-                            value={currentData?.plan}
-                            onChange={(e) => updateCategory(currentCategoryKey as any, { plan: e.target.value })}
-                            placeholder="今週の目標を修正、または入力してください..."
-                            className="w-full p-5 rounded-3xl bg-zinc-900/50 border border-zinc-800 focus:border-blue-500/30 outline-none transition-all text-zinc-300 text-sm leading-relaxed backdrop-blur-sm resize-none"
-                        />
+                        <div className="w-full p-5 rounded-3xl bg-zinc-900/30 border border-zinc-800/50 text-zinc-400 text-sm leading-relaxed backdrop-blur-sm whitespace-pre-wrap">
+                            {currentData?.goalAndMetrics || "目標が設定されていません"}
+                        </div>
                     </div>
 
                     {/* 2. Execution (Daily Logs - Actual) */}
@@ -279,12 +275,27 @@ function EntryForm() {
                         </div>
                     </div>
 
-                    {/* 5. Next Will (Daily Logs) */}
-                    <div className="space-y-6 pt-4">
-                        <h3 className="text-sm font-semibold text-zinc-500 flex items-center gap-2">
-                            <CheckCircle2 size={16} className="text-green-400" />
-                            来週への意志（土〜金：日次）
-                        </h3>
+                    {/* 5. Next Will (Daily Logs & Next Goal) */}
+                    <div className="space-y-8 pt-4">
+                        <div className="space-y-4">
+                            <h3 className="text-sm font-semibold text-zinc-500 flex items-center gap-2">
+                                <PencilLine size={16} className="text-blue-400" />
+                                来週の予定・目標（編集可能）
+                            </h3>
+                            <textarea
+                                rows={3}
+                                value={currentData?.nextGoalAndMetrics}
+                                onChange={(e) => updateCategory(currentCategoryKey as any, { nextGoalAndMetrics: e.target.value })}
+                                placeholder="来週の目標を修正、または入力してください..."
+                                className="w-full p-5 rounded-3xl bg-zinc-900/50 border border-zinc-800 focus:border-blue-500/30 outline-none transition-all text-zinc-300 text-sm leading-relaxed backdrop-blur-sm resize-none"
+                            />
+                        </div>
+
+                        <div className="space-y-4">
+                            <h3 className="text-sm font-semibold text-zinc-500 flex items-center gap-2">
+                                <CheckCircle2 size={16} className="text-green-400" />
+                                来週への意志（土〜金：日次）
+                            </h3>
                         <div className="space-y-4">
                             {DAYS.map((day) => (
                                 <div key={`next-${day.key}`} className="p-4 rounded-3xl bg-zinc-900/50 border border-zinc-800/50 flex gap-4 items-start border-l-8 border-l-green-500/30">
@@ -300,6 +311,7 @@ function EntryForm() {
                                     />
                                 </div>
                             ))}
+                        </div>
                         </div>
                     </div>
 

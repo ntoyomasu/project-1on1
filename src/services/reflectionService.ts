@@ -25,7 +25,8 @@ const emptyDailyLog: DailyLog = {
 };
 
 const createEmptyCategory = (): ImprovementCategory => ({
-    plan: "",
+    goalAndMetrics: "",
+    nextGoalAndMetrics: "",
     dailyLogs: {
         sat: { ...emptyDailyLog },
         sun: { ...emptyDailyLog },
@@ -86,8 +87,15 @@ const normalizeReflection = (data: any): WeeklyReflection => {
             if (normalized[cat].nextWill === undefined) {
                 normalized[cat].nextWill = "";
             }
-            if (normalized[cat].plan === undefined) {
-                normalized[cat].plan = "";
+            if ((normalized[cat] as any).plan !== undefined) {
+                normalized[cat].goalAndMetrics = (normalized[cat] as any).plan;
+                delete (normalized[cat] as any).plan;
+            }
+            if (normalized[cat].goalAndMetrics === undefined) {
+                normalized[cat].goalAndMetrics = "";
+            }
+            if (normalized[cat].nextGoalAndMetrics === undefined) {
+                normalized[cat].nextGoalAndMetrics = "";
             }
         }
     });
@@ -144,15 +152,15 @@ export const reflectionService = {
             status: "DRAFT",
             study: {
                 ...createEmptyCategory(),
-                plan: consolidateDailyWills(lastReflection?.study),
+                goalAndMetrics: lastReflection?.study?.nextGoalAndMetrics || "",
             },
             soccer: {
                 ...createEmptyCategory(),
-                plan: consolidateDailyWills(lastReflection?.soccer),
+                goalAndMetrics: lastReflection?.soccer?.nextGoalAndMetrics || "",
             },
             life: {
                 ...createEmptyCategory(),
-                plan: consolidateDailyWills(lastReflection?.life),
+                goalAndMetrics: lastReflection?.life?.nextGoalAndMetrics || "",
             },
             inventionNote: "",
             mentorComment: "",
