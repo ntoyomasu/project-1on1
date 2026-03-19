@@ -24,6 +24,109 @@ import { reflectionService } from "@/services/reflectionService";
 import { analyzeROI, ROIAnalysis } from "@/lib/analytics";
 import { WeeklyReflection, DailyRoutine } from "@/types/reflection";
 
+// --- Score Trend Chart (Pure SVG) ---
+function ScoreTrendChart({ reflections }: { reflections: WeeklyReflection[] }) {
+    const WIDTH = 320;
+    const HEIGHT = 140;
+    const PAD = { top: 12, right: 16, bottom: 28, left: 28 };
+
+    const chartWidth = WIDTH - PAD.left - PAD.right;
+    const chartHeight = HEIGHT - PAD.top - PAD.bottom;
+
+    // 最大8週分、時系列昇順
+    const data = [...reflections]
+        .filter(r => r.status === "COMPLETED")
+        .slice(0, 8)
+        .reverse();
+
+    if (data.length < 2) {
+        return (
+            <div className="flex items-center justify-center h-24 text-zinc-600 text-xs font-medium">
+                完了済みの振り返りが2件以上になると表示されます
+            </div>
+        );
+    }
+
+    const n = data.length;
+    const xStep = chartWidth / (n - 1);
+
+    const toX = (i: number) => PAD.left + i * xStep;
+    const toY = (v: number) => PAD.top + chartHeight - (v / 100) * chartHeight;
+
+    const makePath = (values: number[]) =>
+        values.map((v, i) => `${i === 0 ? "M" : "L"} ${toX(i).toFixed(1)} ${toY(v).toFixed(1)}`).join(" ");
+
+    const lines = [
+        { key: "life" as const, color: "#fb923c", label: "LIFE" },
+        { key: "soccer" as const, color: "#4ade80", label: "SOCCER" },
+        { key: "study" as const, color: "#60a5fa", label: "STUDY" },
+    ];
+
+    // x軸ラベル: 最初・最後・中間
+    const labelIndices = n <= 4
+        ? data.map((_, i) => i)
+        : [0, Math.floor((n - 1) / 2), n - 1];
+
+    return (
+        <div className="space-y-3">
+            <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full" style={{ maxHeight: 160 }}>
+                {/* y軸ガイドライン */}
+                {[0, 50, 100].map(v => (
+                    <g key={v}>
+                        <line
+                            x1={PAD.left} y1={toY(v)}
+                            x2={PAD.left + chartWidth} y2={toY(v)}
+                            stroke="#27272a" strokeWidth="1"
+                        />
+                        <text x={PAD.left - 4} y={toY(v)} textAnchor="end" dominantBaseline="middle"
+                            fill="#52525b" fontSize="8" fontWeight="bold">
+                            {v}
+                        </text>
+                    </g>
+                ))}
+
+                {/* x軸ラベル */}
+                {labelIndices.map(i => {
+                    const date = data[i].weekStartDate.toDate();
+                    const label = `${date.getMonth() + 1}/${date.getDate()}`;
+                    return (
+                        <text key={i} x={toX(i)} y={HEIGHT - 6}
+                            textAnchor="middle" fill="#52525b" fontSize="8" fontWeight="bold">
+                            {label}
+                        </text>
+                    );
+                })}
+
+                {/* 折れ線 */}
+                {lines.map(({ key, color }) => (
+                    <g key={key}>
+                        <path
+                            d={makePath(data.map(r => r[key].score))}
+                            fill="none" stroke={color} strokeWidth="2"
+                            strokeLinecap="round" strokeLinejoin="round"
+                            opacity="0.85"
+                        />
+                        {data.map((r, i) => (
+                            <circle key={i} cx={toX(i)} cy={toY(r[key].score)} r="3"
+                                fill={color} opacity="0.9" />
+                        ))}
+                    </g>
+                ))}
+            </svg>
+
+            {/* Legend */}
+            <div className="flex items-center gap-4 justify-center">
+                {lines.map(({ color, label }) => (
+                    <div key={label} className="flex items-center gap-1.5">
+                        <div className="w-3 h-0.5 rounded-full" style={{ backgroundColor: color }} />
+                        <span className="text-[9px] font-black text-zinc-500 tracking-widest">{label}</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
 function SummaryView() {
     const router = useRouter();
     const searchParams = useSearchParams();
@@ -116,6 +219,17 @@ function SummaryView() {
                     </p>
                 </div>
             </div>
+
+            {/* Score Trend Chart */}
+            {allReflections.length >= 2 && (
+                <div className="mb-10 p-6 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 backdrop-blur-sm">
+                    <div className="flex items-center gap-2 mb-5">
+                        <TrendingUp size={14} className="text-blue-400" />
+                        <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">Score Trend</span>
+                    </div>
+                    <ScoreTrendChart reflections={allReflections} />
+                </div>
+            )}
 
             {/* Routine Stats Section */}
             <div className="grid grid-cols-2 gap-4 mb-10">
